@@ -9,4 +9,5 @@ h1{
     background-image: url(Rainbow.png);
     background-repeat: no-repeat;
     background-position: center;
+    color: #AAAAAA; /* a soft grey */
 }
