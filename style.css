@@ -1,11 +1,11 @@
 /* Thank you CSS3 */
 @font-face {
-    font-family: hallo-sans;
+    font-family: hallo;
     src: local("fonts/hallo-sans-light.otf");
 }
 
 body{
-    font-family: hallo-sans, serif, 'Open Sans'; /* verdana, helvetica, sans-serif; */
+    font-family: hallo, serif, 'Open Sans'; /* verdana, helvetica, sans-serif; */
     background-color: #9DCEFF;
     text-align: center;
     font-weight: 100;
