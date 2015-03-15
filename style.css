@@ -26,6 +26,7 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
     color: #AAAAAA; /* a soft grey */
+    border-radius: 10px;
 }
 
 p{
