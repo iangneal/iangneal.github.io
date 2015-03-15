@@ -3,3 +3,10 @@ body{
     background-color: #9DCEFF;
     text-align: center;
 }
+
+h1{
+    background-color: #000000; /* this is black, duh */
+    background-image: url(Rainbow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
