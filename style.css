@@ -1,7 +1,7 @@
 /* Thank you CSS3 */
 @font-face {
     font-family: hallo-sans;
-    src: local("fonts/hallo-sans-light.otf") format("opentype");
+    src: local("fonts/hallo-sans-light.otf");
 }
 
 body{
