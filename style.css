@@ -11,16 +11,14 @@
     font-style: normal;
 
 }
-.centered{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 body{
     font-family: 'Open Sans'; /* verdana, helvetica, sans-serif; */
     background-color: #EFEFEF;
     font-weight: 100;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1{
