@@ -48,3 +48,6 @@ p{
 ul{
     list-style-position: inside;
 }
+li{
+    text-align: left;
+}
