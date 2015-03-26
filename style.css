@@ -43,3 +43,7 @@ h1{
 p{
     font-size: 20px;
 }
+
+ul{
+    list-style-position: inside;
+}
