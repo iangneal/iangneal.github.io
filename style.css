@@ -25,9 +25,9 @@ h1{
     background-image: url(images/Green.png);
     background-repeat: no-repeat;
     background-position: center;
-    color: #009062; /* a soft grey */
+    color: #009062;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 p{
