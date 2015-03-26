@@ -11,6 +11,10 @@
     font-style: normal;
 
 }
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 body{
     font-family: 'Open Sans'; /* verdana, helvetica, sans-serif; */
@@ -27,8 +31,6 @@ h1{
     background-image: url(images/Green.png);
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: auto;
-    margin-right: auto;
     color: #009062;
     width: 400px;
     padding: 40px;
