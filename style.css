@@ -26,10 +26,12 @@ h1{
     background-repeat: no-repeat;
     background-position: center;
     color: #009062;
-    padding: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;
+    padding: 40px;
+    border-left-width: 10px;
+    border-right-width: 10px;
     border-radius: 20px;
+    border-style: dashed;
+    border-color: #FFFFFF;
 }
 
 p{
