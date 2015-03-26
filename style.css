@@ -11,10 +11,14 @@
     font-style: normal;
 
 }
-.center{
+.centerElement{
     /* use this when you have a background image to center*/
     margin-left: auto;
     margin-right: auto;
+}
+
+.centerText{
+    text-align: center;
 }
 
 body{
