@@ -30,7 +30,7 @@ body{
 h1{
     font-family: 'hallo_sanslight';
     background-color: #000000; /* this is black, duh */
-    background-image: url(images/Green.png);
+    /*background-image: url(images/Green.png);*/
     background-repeat: no-repeat;
     background-position: center;
     color: #008052;
