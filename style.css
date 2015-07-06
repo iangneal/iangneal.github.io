@@ -48,7 +48,9 @@ p{
 ul{
     /*list-style-position: inside;*/
     display: inline-block;
+    overflow: auto;
 }
 li{
     text-align: left;
+    white-space: nowrap;
 }
