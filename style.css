@@ -21,6 +21,11 @@
     text-align: center;
 }
 
+.boundedBox{
+    width: 400px;
+    padding: 40px;
+}
+
 body{
     font-family: 'Open Sans'; /* verdana, helvetica, sans-serif; */
     background-color: #EFEFEF;
