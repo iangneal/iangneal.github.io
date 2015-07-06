@@ -1,5 +1,11 @@
 /* Thank you CSS3 */
 /* http://csslint.net/ - good tool */
+/*
+    margin: top right bottom left;
+    margin: top right-left bottom;
+    margin: top-bottom right-left;
+    margin: all;
+*/
 @font-face {
     font-family: 'hallo_sanslight';
     src: url('fonts/hallo-sans-light-webfont.eot');
@@ -24,7 +30,7 @@
 
 .boundedBox{
     width: 400px;
-    margin: 0 0 20px 20px;
+    margin: 20px;
 }
 
 body{
@@ -41,7 +47,7 @@ h1{
     background-position: center;
     color: #008052;
     width: 400px;
-    margin: 0 0 40px 40px;
+    margin: 40px;
     border-radius: 20px;
     /*border-style: dashed;
     border-color: #FFFFFF;*/
