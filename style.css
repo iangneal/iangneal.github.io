@@ -69,6 +69,6 @@ ul{
 }
 li{
     text-align: left;
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     margin: 0 0 5px 0;
 }
