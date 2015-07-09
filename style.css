@@ -54,7 +54,8 @@ h1{
     background-position: center;
     color: #008052;
     width: 30%;
-    padding: 40px;
+    padding: 4%;
+    min-height: 20px;
     border-radius: 20px;
     /*border-style: dashed;
     border-color: #FFFFFF;*/
