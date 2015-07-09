@@ -67,7 +67,7 @@ h1{
     background-position: center;
     color: #008052;
     width: 25%;
-    min-width: 200px;
+    min-width: 100px;
     padding: 3%;
     min-height: 20px;
     border-radius: 20px;
@@ -79,7 +79,6 @@ p{
 
 ul{
     list-style-position: inside;
-    /*display: inline-block;*/
 }
 li{
     text-align: left;
