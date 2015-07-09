@@ -34,7 +34,7 @@
 }
 
 .boundedBox{
-    width: 90%;
+    width: max-device-width;
 }
 
 .tab{
