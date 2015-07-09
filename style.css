@@ -57,7 +57,6 @@ body{
     font-family: 'Open Sans'; /* verdana, helvetica, sans-serif; */
     background-color: #EFEFEF;
     font-weight: 100;
-    word-wrap: normal;
 }
 
 h1{
@@ -72,8 +71,6 @@ h1{
     padding: 3%;
     min-height: 20px;
     border-radius: 20px;
-    /*border-style: dashed;
-    border-color: #FFFFFF;*/
 }
 
 p{
@@ -81,7 +78,7 @@ p{
 }
 
 ul{
-    /*list-style-position: inside;*/
+    list-style-position: inside;
     display: inline-block;
 }
 li{
