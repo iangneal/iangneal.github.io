@@ -46,7 +46,7 @@
 }
 
 .boundedBox{
-    margin: 5%;
+    width: 90%;
 }
 
 .tab{
@@ -79,7 +79,7 @@ p{
 
 ul{
     list-style-position: inside;
-    display: inline-block;
+    /*display: inline-block;*/
 }
 li{
     text-align: left;
