@@ -29,13 +29,13 @@
 }
 
 .leftFloat{
-    margin-left: 20%;
+    margin-left: 10%;
     margin-right: auto;
 }
 
 .boundedBox{
-    width: 400px;
-    padding: 20px;
+    width: 70%;
+    padding: 5%;
 }
 
 body{
