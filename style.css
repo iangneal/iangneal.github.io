@@ -28,6 +28,11 @@
     text-align: center;
 }
 
+.leftFloat{
+    margin-left: 20%;
+    margin-right: auto;
+}
+
 .boundedBox{
     width: 400px;
     padding: 20px;
