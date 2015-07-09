@@ -75,4 +75,5 @@ ul{
 li{
     text-align: left;
     white-space: normal;
+    word-wrap: normal;
 }
