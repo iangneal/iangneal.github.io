@@ -34,7 +34,7 @@
 }
 
 .boundedBox{
-    width: max-device-width;
+    width: 90%;
 }
 
 .tab{
@@ -76,4 +76,5 @@ li{
     text-align: left;
     white-space: normal;
     word-wrap: normal;
+    width: inherit;
 }
