@@ -18,8 +18,30 @@
     font-style: normal;
 
 }
+/*:hover{
+    -webkit-transition: 0.5s;
+}*/
+
 .colorGreen {
     background-color: #33AA33;
+}
+
+div.circle:hover a{
+    display: none;
+}
+
+div.circle a{
+    -webkit-transition: 0.5s 0.5s;
+    display: inline;
+}
+
+div.circle:hover div.altText {
+    /*-webkit-transition: 0.5s 0.5s;*/
+    display: inline;
+}
+
+div.circle .altText{
+    display: none;
 }
 
 #resume{
@@ -29,11 +51,21 @@
     padding-right: 3px;
 }
 
+#resume:hover{
+    border-radius: 10px;
+    padding: 5px;
+    content: "Resume";
+    width: 120px;
+    margin-left: 0;
+}
+
 .circle {
     border-radius: 50%;
     padding: 5px;
     width: 40px;
     height: 40px;
+    margin-left: 50%;
+    -webkit-transition: 0.5s;
     /* width and height can be anything, as long as they're equal */
 }
 
@@ -41,6 +73,7 @@
     text-align: center;
     position: fixed;
     float: right;
+    margin-top: 5%;
     margin-left: 80%;
     width: 10%;
     height: 100%;
