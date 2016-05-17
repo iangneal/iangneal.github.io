@@ -21,14 +21,6 @@
 /*:hover{
     -webkit-transition: 0.5s;
 }*/
-
-a.sidebarImage:hover img{
-    height: 0;
-    width: 0;
-}
-
-
-
 .colorGreen {
     background-color: #33AA33;
 }
@@ -120,7 +112,15 @@ div.circle .altText{
 
 }
 
+a.sidebarImage img{
+    height: 30;
+    width: 30;
+}
 
+a.sidebarImage:hover img{
+    height: 0;
+    width: 0;
+}
 
 .tab{
     text-indent: 10px;
