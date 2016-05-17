@@ -113,13 +113,13 @@ div.circle .altText{
 }
 
 img{
-    height: 30;
-    width: 30;
+    height: 30px;
+    width: 30px;
 }
 
 img:hover {
-    height: 0;
-    width: 0;
+    height: 0px;
+    width: 0px;
 }
 
 .tab{
