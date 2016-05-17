@@ -112,12 +112,12 @@ div.circle .altText{
 
 }
 
-img{
+a.sidebarImage img{
     height: 30px;
     width: 30px;
 }
 
-img:hover {
+a.sidebarImage:hover img{
     height: 0px;
     width: 0px;
 }
