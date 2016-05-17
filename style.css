@@ -22,7 +22,7 @@
     -webkit-transition: 0.5s;
 }*/
 
-.disappear:hover {
+a.sidebar:hover img{
     height: 0;
     width: 0;
 }
