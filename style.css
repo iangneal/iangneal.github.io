@@ -18,29 +18,74 @@
     font-style: normal;
 
 }
-/*:hover{
-    -webkit-transition: 0.5s;
-}*/
+
+/* General tags */
+
+body {
+    font-family: 'Open Sans'; /* verdana, helvetica, sans-serif; */
+    background-color: #EFEFEF;
+    font-weight: 100;
+    position: relative;
+}
+
+h1 {
+    font-family: 'hallo_sanslight';
+    background-color: #000000; /* this is black, duh */
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #008052;
+    width: 25%;
+    min-width: 150px;
+    padding: 2% 3%;
+    min-height: 20px;
+    border-radius: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    text-align: left;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#footer {
+    clear: both;
+}
+
+
 .colorGreen {
     background-color: #33AA33;
 }
 
-div.circle:hover a{
-    display: none;
-}
-
-div.circle a{
+div.circle:hover .altText {
     -webkit-transition: 0.5s 0.5s;
     display: inline;
 }
 
-div.circle:hover div.altText {
-    /*-webkit-transition: 0.5s 0.5s;*/
-    display: inline;
+div.circle .altText {
+    text-align: center;
+    display: none;
 }
 
-div.circle .altText{
-    display: none;
+div.circle img {
+    height: 30px;
+    width: 30px;
+}
+
+div.circle:hover img {
+    height: 0px;
+    width: 0px;
 }
 
 #resume{
@@ -53,7 +98,7 @@ div.circle .altText{
 #resume:hover{
     border-radius: 10px;
     padding: 5px;
-    content: "Resume";
+    /*content: "Resume";*/
     width: 120px;
     margin-left: 0;
 }
@@ -112,52 +157,6 @@ div.circle .altText{
 
 }
 
-a.sidebarImage img{
-    height: 30px;
-    width: 30px;
-}
-
-a.sidebarImage:hover img{
-    height: 0px;
-    width: 0px;
-}
-
-.tab{
+.tab {
     text-indent: 10px;
-}
-
-body{
-    font-family: 'Open Sans'; /* verdana, helvetica, sans-serif; */
-    background-color: #EFEFEF;
-    font-weight: 100;
-    position: relative;
-}
-
-h1{
-    font-family: 'hallo_sanslight';
-    background-color: #000000; /* this is black, duh */
-    /*background-image: url(images/Green.png);*/
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #008052;
-    width: 25%;
-    min-width: 150px;
-    padding: 2% 3%;
-    min-height: 20px;
-    border-radius: 20px;
-}
-
-p{
-    font-size: 20px;
-}
-
-ul{
-    list-style-position: inside;
-}
-li{
-    text-align: left;
-}
-
-#footer {
-    clear: both;
 }
