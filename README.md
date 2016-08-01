@@ -2,4 +2,4 @@
 
 Ian Neal's personal webpage.
 
-http://dahca.github.io
+http://ianglenneal.com -> http://dahca.github.io
