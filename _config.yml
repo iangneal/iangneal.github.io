@@ -16,13 +16,14 @@
 title: Ian Glen Neal
 email: ian.gl.neal@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Just a bit about me and about some of the work I do.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.ianglenneal.com"
 twitter_username: ianglenneal
 github_username:  dahca
+
+# For non-post related things.
+include: ['_pages']
 
 # Build settings
 markdown: kramdown
