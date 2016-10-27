@@ -16,14 +16,16 @@
 title: Ian Glen Neal
 email: ian.gl.neal@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Just a bit about me and about some of the work I do.
+  Just a bit about me and the work that I do.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.ianglenneal.com"
-twitter_username: ianglenneal
-github_username:  dahca
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
-# For non-post related things.
-include: ['_pages']
+include: ["_pages"]
+
+# Social media handles
+twitter_username:
+github_username:   dahca
+linkedin_username: iangleneal
 
 # Build settings
 markdown: kramdown
