@@ -5,4 +5,4 @@ set -e
 # Echo commands to command line.
 set -x
 
-gem install jekyll bundler
+gem install bundle github-pages
