@@ -1,5 +1,13 @@
-# dahca.github.io
+## Setup
 
-Ian Neal's personal webpage.
+- https://jekyllrb.com/docs/quickstart/
 
-http://ianglenneal.com -> http://dahca.github.io
+```
+cd dahca.github.io
+./setup.sh  # requires sudo
+jekyll new ./site
+cd site
+
+JEKYLL_ENV=production bundle exec jekyll build
+bundle exec jekyll serve
+```
