@@ -5,6 +5,4 @@ set -e
 # Echo commands to command line.
 set -x
 
-apt install -y ruby-dev
-
 gem install jekyll bundler
