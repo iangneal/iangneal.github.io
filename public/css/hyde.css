@@ -45,6 +45,18 @@ html {
   }
 }
 
+/* iangneal: no bullets for contact page */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul p {
+  text-indent: 1.0em;
+}
+
 
 /*
  * Sidebar
@@ -97,6 +109,15 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+}
+
+/* iangneal: Differentate the active item a bit more. */
+.sidebar-nav-item.active::after {
+  content: " >";
+}
+
+.sidebar-nav-item.active::before {
+  content: "< ";
 }
 
 /* Sticky sidebar

@@ -9,7 +9,7 @@ markdown: kramdown
 highlighter: rouge
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 
 # Setup
 title: Ian Glen Neal
@@ -21,14 +21,28 @@ description: >-
 url: 'about.iangneal.io'
 baseurl: '/'
 
+# Social media accounts
+twitter_username: iangneal
+github_username: dahca
+linkedin_username: ianglenneal
+google_plus_username:
+facebook_username:
+dribbble_username:
+
+# Various emails
+gmail_address: ian.gl.neal@gmail.com
+utexas_address: ian.glen.neal@utexas.edu
+
+
+# Atom.xml -- RSS feed
 author:
   name: 'Ian Glen Neal'
-  url: https://twitter.com/mdo
 
+# Paginate: break up block post list
 paginate: 5
 
 # Custom vars
-version:          2.1.0
-#
-#github:
-#  repo:           https://github.com/poole/hyde
+version:
+
+github:
+  repo:
