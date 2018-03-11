@@ -19,7 +19,7 @@ description: >-
   Future PhD candidate Computer Science, with a focus in Systems and Computer
   Architecture.
 url: 'about.iangneal.io'
-baseurl: '/'
+baseurl: /
 
 # Social media accounts
 twitter_username: iangneal
