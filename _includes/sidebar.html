@@ -6,10 +6,15 @@
           {{ site.title }}
         </a>
       </h1>
-      <p class="lead">{{ site.description }}</p>
+      <!-- <p class="lead">{{ site.description }}</p> -->
+      <p>{{ site.description }}</p>
+
     </div>
 
     <nav class="sidebar-nav">
+      <a class="sidebar-doc-item" href="documents/cv.pdf">Curriculum Vitae</a>
+      <a class="sidebar-doc-item" href="documents/resume.pdf">Résumé</a>
+      </br>
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
       {% comment %}

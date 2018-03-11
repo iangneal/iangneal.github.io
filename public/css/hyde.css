@@ -54,7 +54,7 @@ ul {
 }
 
 ul p {
-  text-indent: 1.0em;
+  text-indent: 1.0rem;
 }
 
 
@@ -91,8 +91,10 @@ ul p {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
+  /* iangneal: Not digging this font.
   font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  */
+  font-size: 2.0rem;
 }
 
 /* Sidebar nav */
@@ -115,10 +117,21 @@ a.sidebar-nav-item:focus {
 .sidebar-nav-item.active::after {
   content: " >";
 }
-
 .sidebar-nav-item.active::before {
   content: "< ";
 }
+
+/* iangneal: Do something different for document links. */
+a.sidebar-doc-item {
+  display: block;
+  line-height: 1.75;
+  color: #90a959;
+}
+a.sidebar-doc-item:hover,
+a.sidebar-doc-item:focus {
+  text-decoration: underline;
+}
+
 
 /* Sticky sidebar
  *

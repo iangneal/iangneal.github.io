@@ -33,6 +33,15 @@ For the updated fonts/more options:
   </li>
 {% endif %}
 
+{% if site.stackoverflow_username %}
+  <li>
+    <a href="https://stackoverflow.com/users/{{ site.stackoverflow_username }}" >
+      <i class="fab fa-stack-overflow"></i> Stack Overflow
+    </a>
+    <p>I answer a question or two when I can.</p>
+  </li>
+{% endif %}
+
 {% if site.twitter_username %}
   <li>
     <a href="https://twitter.com/{{ site.twitter_username }}">
