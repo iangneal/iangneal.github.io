@@ -23,6 +23,7 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jekyll-paginate", "~> 1.0"
   gem "rouge"
+  gem "jekyll-github-metadata"
   gem "redcarpet", "~> 3.4.0"
 end
 

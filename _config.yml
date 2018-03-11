@@ -1,4 +1,5 @@
 gems:
+  - jekyll-github-metadata
   - jekyll-paginate
   - jekyll-gist
   - redcarpet
