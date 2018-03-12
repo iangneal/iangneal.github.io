@@ -47,14 +47,19 @@ html {
 
 /* iangneal: no bullets for contact page */
 
-ul {
+ul.contact {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-ul p {
+ul.contact p {
   text-indent: 1.0rem;
+}
+
+ul {
+  padding: 0;
+  margin: 1rem;
 }
 
 
