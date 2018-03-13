@@ -36,12 +36,14 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 16px;
+    /*font-size: 16;*/
+    font-size: 14px;
   }
 }
 @media (min-width: 58em) {
   html {
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 18px;
   }
 }
 
@@ -82,7 +84,8 @@ ul {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    /*width: 18rem;*/
+    width: 16rem;
     text-align: left;
   }
 }
