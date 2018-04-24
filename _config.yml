@@ -1,4 +1,4 @@
-gems:
+plugins:
   - jekyll-github-metadata
   - jekyll-paginate
   - jekyll-gist
@@ -17,8 +17,8 @@ title: Ian Glen Neal
 email: ian.gl.neal@gmail.com
 tagline: ''
 description: >-
-  Future PhD candidate Computer Science, with a focus in Systems and Computer
-  Architecture.
+  Future PhD candidate Computer Science, with a focus in Software Systems and
+  Computer Architecture.
 url: 'about.iangneal.io'
 baseurl: /
 
