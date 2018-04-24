@@ -136,7 +136,6 @@ a.sidebar-nav-item:focus {
 a.sidebar-doc-item {
   display: block;
   line-height: 1.75;
-  color: #90a959;
 }
 a.sidebar-doc-item:hover,
 a.sidebar-doc-item:focus {
@@ -292,4 +291,23 @@ a.sidebar-doc-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+/*
+ * Custom color themes because I'm picky.
+ * I used https://www.w3schools.com/colors/colors_picker.asp to scale colors
+ * above to lighter/darker versions.
+ */
+
+/* Dark Blue */
+.theme-base-10 .sidebar {
+  background-color: #437489;
+}
+.theme-base-10 .content a,
+.theme-base-10 .related-posts li a:hover {
+  color: #437489;
+}
+.theme-base-10 a.sidebar-doc-item {
+  font-weight: bold;
+  color: #000000;
 }
