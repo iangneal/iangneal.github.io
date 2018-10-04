@@ -19,7 +19,7 @@ For the updated fonts/more options:
   </li>
 
   <li>
-    <i class="fas fa-envelope"></i> {{ site.utexas_address }}
+    <i class="fas fa-envelope"></i> {{ site.school_address }}
     <p> For professional inquiries. </p>
   </li>
 
@@ -28,11 +28,12 @@ For the updated fonts/more options:
     <a href="https://github.com/{{ site.github_username }}">
       <i class="fab fa-github"></i> GitHub ({{ site.github_username }})
     </a>
-    <p> Do not ask about the origin of my username &mdash; the answer is
+    <p> Do not ask about the origin of my username, for the answer is
     disappointing. </p>
   </li>
 {% endif %}
 
+{% comment %}
 {% if site.medium_username %}
   <li>
     <a href="https://medium.com/@{{ site.twitter_username }}">
@@ -92,4 +93,5 @@ For the updated fonts/more options:
     </a>
   </li>
 {% endif %}
+{% endcomment %}
 </ul>
