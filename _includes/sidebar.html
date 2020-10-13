@@ -2,8 +2,11 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
 
-      <img src="{{ '/public/profile.jpg' | relative_url }}" alt="">
-
+      <div class="sidebar-img-wrapper">
+        <!-- style="background: url({{ '/public/profile.jpg' | relative_url }}); background-size: auto;" -->
+        <img src="{{ '/public/profile.jpg' | relative_url }}" alt="">
+      </div>
+      
       <h1>
         <a href="{{ '/' | relative_url }}">
           {{ site.title }}
@@ -17,8 +20,8 @@
     <nav class="sidebar-nav">
       <a class="sidebar-doc-item"
          href="{{ '/documents/cv.pdf' | relative_url }}">Curriculum Vitae</a>
-      <a class="sidebar-doc-item"
-         href="{{ '/documents/resume.pdf' | relative_url }}">Résumé</a>
+      <!-- <a class="sidebar-doc-item"
+         href="{{ '/documents/resume.pdf' | relative_url }}">Résumé</a> -->
       </br>
       <a class="sidebar-nav-item{% if page.url == '/' %} active{%
       endif %}" href="{{ '/' | relative_url }}">Home</a>

@@ -21,5 +21,9 @@ it is important to re-examine past assumptions about storage system design
 for new storage devices and thoroughly analyze the performance characteristics
 of the new medium to gain insights about how to best optimize for the platform.
 
+## News
+
+- Sept 2020: [<span style="font-variant:small-caps;">Agamotto</span>](pub) has been accepted to OSDI '20!
+
 [baris-homepage]: https://web.eecs.umich.edu/~barisk/
 
