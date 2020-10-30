@@ -9,7 +9,7 @@ My [google scholar][google-scholar] profile is more likely to be up-to-date.
 ## Conference Papers
 1. [<span style="font-variant:small-caps;">Agamotto</span>: How Persistent is your Persistent Memory Application?][agamotto20] <br/>
    **Ian Neal**, Ben Reeves, Ben Stoler, Andrew Quinn, Youngjin Kwon, Simon Peter, Baris Kasikci.
-   _To Appear_ In Proceedings of the 14th  USENIX  Symposium  on  Operating  Systems  Design  and  Implementation  (OSDI  '20).
+   In Proceedings of the 14th  USENIX  Symposium  on  Operating  Systems  Design  and  Implementation  (OSDI  '20). [[paper](/pubs/agamotto.pdf)]
 
 2. [<span style="font-variant:small-caps;">Dolma</span>: Securing Speculation with the Principle of Transient Non-Observability][dolma20] <br/>
    Kevin Loughlin, **Ian Neal**, Jiacheng Ma, Elisa Tsai, Ofir Weisse, Satish Narayanasamy, Baris Kasikci.
