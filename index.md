@@ -5,21 +5,15 @@ title: Home
 
 ## About Me
 
-I am a second year PhD student studying Computer Science at the University of
-Michigan. I am advised by [**Baris Kasikci**][baris-homepage].
+I am a third year PhD student studying Computer Science at the University of
+Michigan. I am advised by Professor [**Baris Kasikci**][baris-homepage].
 
-I am interested in designing systems that better support prominent application
-workloads and new hardware technologies. My main research interests are in
-operating systems (how are new systems designed on emerging hardware
-technologies), computer architecture (how can current systems design inform
-future efficient hardware), and security (how can all of these new hardware
-and software systems guarantee safety going forward). 
 
-My latest work has been in developing storage systems for emerging persistent
-storage technologies, such as non-volatile main memory (NVM). In my experience,
-it is important to re-examine past assumptions about storage system design
-for new storage devices and thoroughly analyze the performance characteristics
-of the new medium to gain insights about how to best optimize for the platform.
+In my research, I want to eliminate the intellectual barrier-to-entry for developers who want to use emerging hardware to develop efficient and reliable systems. To this end, I aim to create tools which developers can use to automatically reason about the characteristics of new hardware so that they can better leverage its capabilities without
+sacrificing the correctness of their applications. My current focus is in the development of efficient and reliable
+systems using emerging persistent main memory technologies. I am also interested in developing verifiably secure
+hardware systems and tools which allow for easier development of secure systems.
+
 
 ## News
 
