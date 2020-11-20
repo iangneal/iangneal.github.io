@@ -23,6 +23,7 @@ of the new medium to gain insights about how to best optimize for the platform.
 
 ## News
 
+- Nov 2020: [<span style="font-variant:small-caps;">Hippocrates</span>](pub) has been accepted to ASPLOS '21!
 - Sept 2020: [<span style="font-variant:small-caps;">Agamotto</span>](pub) has been accepted to OSDI '20!
 
 [baris-homepage]: https://web.eecs.umich.edu/~barisk/
