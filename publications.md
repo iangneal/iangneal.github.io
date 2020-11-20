@@ -17,7 +17,7 @@ My [google scholar][google-scholar] profile is more likely to be up-to-date.
 
 3. [<span style="font-variant:small-caps;">Dolma</span>: Securing Speculation with the Principle of Transient Non-Observability][dolma20] <br/>
    Kevin Loughlin, **Ian Neal**, Jiacheng Ma, Elisa Tsai, Ofir Weisse, Satish Narayanasamy, Baris Kasikci.
-   _To Appear_ In Proceedings of the 30thUSENIX Security Symposium (USENIX Security '21).
+   _To Appear_ In Proceedings of the 30th USENIX Security Symposium (USENIX Security '21).
 
 4. [NDA: Preventing Speculative Execution Attacks at Their Source.][nda19] <br/>
    Ofir Weisse, **Ian Neal**, Kevin Loughlin, Thomas F. Wenisch, Baris Kasikci.
@@ -29,6 +29,11 @@ My [google scholar][google-scholar] profile is more likely to be up-to-date.
    Chidambaram, Emmett Witchel. 2018 USENIX Annual Technical Conference (USENIX
    ATC '18). Boston, MA, July 2018. **Awarded Best Paper!**
 
+## Patents
+
+1. Color-specific video frame brightness filter. Matthew Richard Wozniak, Mehmet Kucukgoz, Holly Helene Pollock, **Ian Glen Neal**, Rafael Vincent Prieto Vertido. [[Google Patents][https://patents.google.com/patent/US20200186764A1/en]]
+2. Video frame brightness filter. Matthew Richard Wozniak, Mehmet Kucukgoz, Holly Helene Pollock, **Ian Glen Neal**, Rafael Vincent Prieto Vertido. [[Google Patents][https://patents.google.com/patent/US20200184247A1/en]]
+3. User-specific video frame brightness filter. Matthew Richard Wozniak, Mehmet Kucukgoz, Holly Helene Pollock, **Ian Glen Neal**, Rafael Vincent Prieto Vertido. [[Google Patents][https://patents.google.com/patent/US10778932B2/en]]
 
 ## Honors Thesis
 1. [The Advantages of a Transactional Interface: Porting Applications to
