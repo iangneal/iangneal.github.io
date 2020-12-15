@@ -17,6 +17,7 @@ hardware systems and tools which allow for easier development of secure systems.
 
 ## News
 
+- Dec 2020: My publication, ["Rethinking File Mapping Structures for Persistent Memory"](pub), has been accepted to FAST '21!
 - Nov 2020: [<span style="font-variant:small-caps;">Hippocrates</span>](pub) has been accepted to ASPLOS '21!
 - Sept 2020: [<span style="font-variant:small-caps;">Agamotto</span>](pub) has been accepted to OSDI '20!
 
