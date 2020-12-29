@@ -1,96 +1,53 @@
-plugins:
-  - jekyll-github-metadata
-  - jekyll-paginate
-  - jekyll-gist
-  - redcarpet
+# -----------------------------------------------------------------------------
+# Site settings
+# -----------------------------------------------------------------------------
 
-
-# Dependencies
-markdown: kramdown
-highlighter: rouge
-
-# Permalinks
-permalink: pretty
-
-# Setup
-title: Ian Glen Neal
-email: ian.gl.neal@gmail.com
-tagline: ''
-description: >-
+title: blank # the website title (if blank, full name will be used instead)
+first_name: Ian
+middle_name: Glen
+last_name: Neal
+email: iangneal@umich.com
+description: > # the ">" symbol means to ignore newlines until "footer_text:"
   PhD Candidate in Computer Science with a focus in Systems and
   Computer Architecture.
-url: 'about.iangneal.io'
-baseurl: /
+footer_text: >
+  Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 
-
-
-# Various emails
-gmail_address: ian.gl.neal@gmail.com
-school_address: iangneal@umich.edu
-
-
-# Atom.xml -- RSS feed
-author:
-  name: 'Ian Glen Neal'
-
-# Paginate: break up block post list
-paginate: 5
-paginate_path: "/blog/page:num/"
-
-# Custom vars
-version:
-
-github:
-  repo:
-
-
-# # -----------------------------------------------------------------------------
-# # Site settings
-# # -----------------------------------------------------------------------------
-
-# title: blank # the website title (if blank, full name will be used instead)
-# first_name: You
-# middle_name: R.
-# last_name: (Long Last) Name
-# email: you@example.com
-# description: > # the ">" symbol means to ignore newlines until "footer_text:"
-#   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 # footer_text: >
 #   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 #   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 #   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 
-# url:  # the base hostname & protocol for your site
-# baseurl: /al-folio # the subpath of your site, e.g. /blog/
-# last_updated: false # set to true if you want to display last updated in the footer
+# # Various emails
+# gmail_address: ian.gl.neal@gmail.com
+# school_address: iangneal@umich.edu
 
-# # -----------------------------------------------------------------------------
-# # Layout
-# # -----------------------------------------------------------------------------
+url: about.iangneal.io # the base hostname & protocol for your site
+baseurl: / # the subpath of your site, e.g. /blog/
+last_updated: true # set to true if you want to display last updated in the footer
 
-# navbar_fixed: true
-# footer_fixed: true
-# # TODO: add layout settings (single page vs. multi-page)
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
 
-# # -----------------------------------------------------------------------------
-# # Open Graph
-# # -----------------------------------------------------------------------------
-# # Display links to the page with a preview object on social media.
-# # To achieve this, change serve_og_meta to true and then provide the URL of the
-# # preview image as the value of og_image.
-# serve_og_meta: false # Include Open Graph meta tags in the HTML head
-# og_image: # The site-wide (default for all links) Open Graph preview image
+navbar_fixed: true
+footer_fixed: true
+# TODO: add layout settings (single page vs. multi-page)
 
-# # -----------------------------------------------------------------------------
-# # Social integration
-# # -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Open Graph
+# -----------------------------------------------------------------------------
+# Display links to the page with a preview object on social media.
+# To achieve this, change serve_og_meta to true and then provide the URL of the
+# preview image as the value of og_image.
+serve_og_meta: false # Include Open Graph meta tags in the HTML head
+og_image: # The site-wide (default for all links) Open Graph preview image
 
-# github_username: # your GitHub user name
-# twitter_username: # your Twitter handle
-# linkedin_username: # your LinkedIn user name
-# scholar_userid: # your Google Scholar ID
-# orcid_id: # your ORCID ID
-# medium_username: # your Medium username
+# -----------------------------------------------------------------------------
+# Social integration
+# -----------------------------------------------------------------------------
+
 # quora_username: # your Quora username
 # publons_id: # your ID on Publons
 # research_gate_profile: # your profile on ResearchGate
@@ -101,99 +58,105 @@ twitter_username: iangneal
 medium_username: iangneal
 github_username: Dahca
 linkedin_username: ianglenneal
+scholar_userid: U9fyow8AAAAJ # your Google Scholar ID
+orcid_id: 0000-0001-9721-781X # your ORCID ID
 
-# contact_note: >
-#   You can even add a little note about which of these is the best way to reach you.
+contact_note: >
+  Email is a reliable way to contact me. Use other methods at your own risk.
 
 google_analytics: G-SDVB4P6SDC # out your google-analytics code
 
-# # -----------------------------------------------------------------------------
-# # Blog
-# # -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Blog
+# -----------------------------------------------------------------------------
 
-# blog_name: al-folio  # your blog must have a name for it to show up in the nav bar
-# blog_description: a simple whitespace theme for academics
-# permalink: /blog/:year/:title/
+blog_name:  # your blog must have a name for it to show up in the nav bar
+blog_description: a simple whitespace theme for academics
+permalink: /blog/:year/:title/
 
-# # Pagination
-# pagination:
-#   enabled: true
+# Pagination
+pagination:
+  enabled: true
 
-# # Comments
-# disqus_shortname: al-folio # put your disqus shortname
+# Comments
+disqus_shortname: al-folio # put your disqus shortname
 
-# # -----------------------------------------------------------------------------
-# # Collections
-# # -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Collections
+# -----------------------------------------------------------------------------
 
-# collections:
-#   news:
-#     defaults:
-#       layout: post
-#     output: true
-#     permalink: /news/:path/
-#   projects:
-#     output: true
-#     permalink: /projects/:path/
+collections:
+  news:
+    defaults:
+      layout: post
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
 
 # news_limit: 5
 
-# # -----------------------------------------------------------------------------
-# # Jekyll settings
-# # -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Jekyll settings
+# -----------------------------------------------------------------------------
 
-# # Markdown and syntax highlight
-# markdown: kramdown
-# highlighter: rouge
-# highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
-# kramdown:
-#   input: GFM
-#   syntax_highlighter_opts:
-#     css_class: 'highlight'
-#     span:
-#       line_numbers: false
-#     block:
-#       line_numbers: false
-#       start_line: 1
+# Markdown and syntax highlight
+markdown: kramdown
+highlighter: rouge
+highlight_theme: github  # https://github.com/jwarby/jekyll-pygments-themes
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+      start_line: 1
 
-# # Includes & excludes
-# include: ['_pages']
-# exclude: [vendor]
+# Includes & excludes
+include: 
+  - _pages
+exclude: 
+  - vendor
+  - README.md
+  - _pages/teaching
 
-# # Plug-ins
-# plugins:
-#   - jekyll-email-protect
-#   - jekyll-github-metadata
-#   - jekyll-paginate-v2
-#   - jekyll/scholar
-#   - jekyll-twitter-plugin
-#   - jemoji
-#   # - bootstrap
-#   # - material-sass
+# Plug-ins
+plugins:
+  - jekyll-email-protect
+  - jekyll-github-metadata
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-twitter-plugin
+  - jemoji
+  # - bootstrap
+  # - material-sass
 
-# # -----------------------------------------------------------------------------
-# # Jekyll Scholar
-# # -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# Jekyll Scholar
+# -----------------------------------------------------------------------------
 
-# scholar:
+scholar:
 
-#   last_name: Einstein
+  last_name: Neal
 
-#   style: apa
-#   locale: en
+  style: apa
+  locale: en
 
-#   source: /_bibliography/
-#   bibliography: papers.bib
-#   bibliography_template: bib
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
 
-#   replace_strings: true
-#   join_strings: true
+  replace_strings: true
+  join_strings: true
 
-#   details_dir: bibliography
-#   details_layout: bibtex.html
-#   details_link: Details
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: Details
 
-#   query: "@*"
+  query: "@*"
 
 # -----------------------------------------------------------------------------
 # Optional Features
@@ -203,8 +166,8 @@ enable_google_analytics:  true
 enable_mansory:           true
 enable_math:              true
 enable_tooltips:          false
-enable_darkmode:          false
-show_social_icons:        false
+enable_darkmode:          true
+show_social_icons:        true
 
 # -----------------------------------------------------------------------------
 # Library versions
