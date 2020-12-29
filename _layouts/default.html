@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 
-  {% include head.html %}
+  <head>
+    {% include head.html %}
+    {% include scripts/mathjax.html %}
+  </head>
 
-  <body class="theme-base-10">
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
-    {% include sidebar.html %}
+    <!-- Header -->
 
-    <div class="content container">
+    {% include header.html %}
+
+    <!-- Content -->
+
+    <div class="container mt-5">
       {{ content }}
     </div>
 
+    <!-- Footer -->
+
+    {% include footer.html %}
+
   </body>
+
+  {% include scripts/jquery.html %}
+  {% include scripts/bootstrap.html %}
+  {% include scripts/mansory.html %}
+  {% include scripts/misc.html %}
+
 </html>

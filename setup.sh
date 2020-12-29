@@ -6,3 +6,4 @@ set -e
 set -x
 
 gem install bundle github-pages
+bundle install
