@@ -21,29 +21,30 @@
         {% for author in entry.author_array %}
           {% if forloop.length == 1 %}
             {% if author.last == site.scholar.last_name %}
-              <em>{{author.last}}, {{author.first}}</em>
+             <!-- http://hamishwillee.github.io/2014/11/13/jekyll-includes-are-functions/ -->
+              <em>{% include author_name.html author=author %}</em>
             {% else %}
-              {{author.last}}, {{author.first}}
+              {% include author_name.html author=author %}
             {% endif %}
           {% else %}
             {% unless forloop.last %}
               {% if author.last == site.scholar.last_name %}
-                <em>{{author.last}}, {{author.first}}</em>,
+                <em>{% include author_name.html author=author %}</em>,
               {% else %}
                 {% if site.data.coauthors[author.last] %}
-                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>,
+                  <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{% include author_name.html author=author %}</a>,
                 {% else %}
-                  {{author.last}}, {{author.first}},
+                  {% include author_name.html author=author %},
                 {% endif %}
               {% endif %}
             {% else %}
               {% if author.last == site.scholar.last_name %}
-                and <em>{{author.last}}, {{author.first}}</em>
+                and <em>{% include author_name.html author=author %}</em>
               {% else %}
                 {% if site.data.coauthors[author.last] %}
-                  and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{{author.last}}, {{author.first}}</a>
+                  and <a href="{{site.data.coauthors[author.last].url}}" target="_blank">{% include author_name.html author=author %}</a>
                 {% else %}
-                  and {{author.last}}, {{author.first}}
+                  and {% include author_name.html author=author %}
                 {% endif %}
               {% endif %}
             {% endunless %}
