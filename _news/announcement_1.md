@@ -6,4 +6,4 @@ inline: true
 
 <!-- A simple inline announcement. -->
 
-[<span style="font-variant:small-caps;">Agamotto</span>](pub) has been accepted to OSDI '20!
+[<span style="font-variant:small-caps;">Agamotto</span>](/publications) has been accepted to OSDI '20!

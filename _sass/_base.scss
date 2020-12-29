@@ -167,6 +167,41 @@ a, table.table a {
   color: var(--global-text-color);
 }
 
+.news {
+  a.btn {
+    color: var(--global-text-color);
+    border: 1px solid var(--global-text-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    &:hover {
+      color: var(--global-theme-color);
+      border-color: var(--global-theme-color);
+    }
+  }
+}
+
+// Selected publications
+
+.publications {
+  .more {
+    a.btn {
+      color: var(--global-text-color);
+      border: 1px solid var(--global-text-color);
+      // font-size: 2rem;
+      // padding-left: 1rem;
+      // padding-right: 1rem;
+      // padding-top: 0.25rem;
+      // padding-bottom: 0.25rem;
+      &:hover {
+        color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
 // Social (bottom)
 
 .social {
@@ -286,6 +321,18 @@ footer.sticky-bottom {
   }
 }
 
+// News (the full page version)
+
+.newspage {
+  h2.year {
+    color: $grey-color;
+    border-top: 1px solid $grey-color-light;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    // margin-bottom: -2rem;
+    text-align: left;
+  }
+}
 
 // Publications
 

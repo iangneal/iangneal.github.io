@@ -7,4 +7,4 @@ date: 2020-11-18
 inline: true
 ---
 
-[<span style="font-variant:small-caps;">Hippocrates</span>](pub) has been accepted to ASPLOS '21!
+[<span style="font-variant:small-caps;">Hippocrates</span>](/publications/) has been accepted to ASPLOS '21!

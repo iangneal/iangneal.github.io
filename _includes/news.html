@@ -1,6 +1,9 @@
+<!-- {#
+  Add a link to full news, but only if we overflow
+#} -->
 <div class="news">
   <h2>News</h2>
-  {% if site.news  %}
+  {% if site.news %}
     <div class="table-responsive">
       <table class="table table-sm table-borderless">
       {% assign news = site.news | reverse %}
@@ -21,4 +24,13 @@
   {% else %}
     <p>No news so far...</p>
   {% endif %}
+
+  {% assign num_news_items = site.news | size %}
+  {% if site.news_limit and num_news_items > site.news_limit %}
+    <div style="text-align: center;">
+      <a href="/news" class="btn btn-md" role="button">See all events</a>
+    </div>
+  {% endif %}
+
+  
 </div>

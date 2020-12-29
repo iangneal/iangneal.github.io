@@ -1,5 +1,38 @@
 ---
+notes: https://github.com/inukshuk/jekyll-scholar
 ---
+
+@inproceedings{neal2017TheAO,
+  title={{The Advantages of a Transactional Interface: Porting Applications to TxFS}},
+  author={Ian Neal},
+  booktitle={The University of Texas at Austin Department of Computer Science},
+  month={may},
+  year={2017},
+
+  selected={false},
+  type={thesis},
+  abbr={Honors Thesis},
+  pdf={honors_thesis.pdf},
+  url={https://apps.cs.utexas.edu/apps/tech-reports/27249},
+  abs={In this paper I explore the value of transactional file systems by showing how such systems can benefit existing applications while not adding additional complexity to the codebase. I first discuss the concept of transactions in computing and how transactional semantics are used to provide consistency and durability to an application’s state. I examine a new work developed at the University of Texas, TxFS, which provides a very simple and powerful transactional interface. I then introduce how existing systems can be modified to take advantage of TxFS by modifying SQLite, a widely used embedded database, and by modifying OpenLDAP, a widely used implementation of the Lightweight Directory Access Protocol. These modified systems benefit from running on TxFS by having a simplified transactional system, reduced locking, no user-level logging, and enhanced support for multithreaded operations. Additionally, I show how simple it is to port existing systems to TxFS, and demonstrate how easy it would be for other systems to adopt TxFS to ensure durability and consistency for their users.}
+
+}
+
+@inproceedings{hu2018txfs,
+  title={{TxFS: Leveraging File-System Crash Consistency to Provide ACID Transactions}},
+  author={Hu, Yige and Zhu, Zhiting and Neal, Ian and Kwon, Youngjin and Cheng, Tianyu and Chidambaram, Vijay and Witchel, Emmett},
+  booktitle={Proceedings of the 2018 USENIX Conference on Usenix Annual Technical Conference},
+  pages={879--891},
+  year={2018},
+  month={jul},
+
+  selected={false},
+  type={peer-reviewed},
+  abbr={ATC'18},
+  url={https://www.usenix.org/conference/atc18/presentation/hu},
+  pdf={txfs.pdf},
+  abstract={We introduce TxFS, a novel transactional file system that builds upon a file system's atomic-update mechanism such as journaling. Though prior work has explored a number of transactional file systems, TxFS has a unique set of properties: a simple API, portability across different hardware, high performance, low complexity (by building on the journal), and full ACID transactions. We port SQLite and Git to use TxFS, and experimentally show that TxFS provides strong crash consistency while providing equal or better performance.}
+}
 
 @inproceedings{weisse2019nda,
   title={NDA: Preventing speculative execution attacks at their source},
@@ -7,8 +40,10 @@
   booktitle={Proceedings of the 52nd Annual IEEE/ACM International Symposium on Microarchitecture},
   pages={572--586},
   year={2019},
+  month={oct},
   
   selected={false},
+  type={peer-reviewed},
   abbr={ISCA'19},
   url={https://dl-acm-org.proxy.lib.umich.edu/doi/abs/10.1145/3352460.3358306},
   pdf={nda.pdf},
@@ -17,7 +52,7 @@
 
 @inproceedings {neal2020agamotto,
   author = {Ian Neal and Ben Reeves and Ben Stoler and Andrew Quinn and Youngjin Kwon and Simon Peter and Baris Kasikci},
-  title = {{AGAMOTTO}: How Persistent is your Persistent Memory Application?},
+  title = {{AGAMOTTO: How Persistent is your Persistent Memory Application?}},
   booktitle = {14th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 20)},
   year = {2020},
   isbn = {978-1-939133-19-9},
@@ -27,6 +62,7 @@
   month = nov,
 
   selected={true},
+  type={peer-reviewed},
   abbr={OSDI'20},
   url={https://www.usenix.org/conference/osdi20/presentation/neal},
   pdf={agamotto.pdf},
@@ -35,4 +71,89 @@
   In this paper we aim to build a system for more thoroughly testing PM applications. We inform our design using a detailed study of 63 bugs from popular PM projects. We identify two application-independent patterns of PM misuse which account for the majority of bugs in our study and can be detected automatically. The remaining application-specific bugs can be detected using compact custom oracles provided by developers.
 
   We then present AGAMOTTO, a generic and extensible system for discovering misuse of persistent memory in PM applications. Unlike existing tools that rely on extensive test cases or annotations, AGAMOTTO symbolically executes PM systems to discover bugs. AGAMOTTO introduces a new symbolic memory model that is able to represent whether or not PM state has been made persistent. AGAMOTTO uses a state space exploration algorithm, which drives symbolic execution towards program locations that are susceptible to persistency bugs. AGAMOTTO has so far identified 84 new bugs in 5 different PM applications and frameworks while incurring no false positives.}
+}
+
+@misc{wozniak2020user,
+  title={User-specific video frame brightness filter},
+  author={Wozniak, Matthew Richard and Kucukgoz, Mehmet and Pollock, Holly Helene and Neal, Ian Glen and Vertido, Rafael Vincent Prieto},
+  year={2020},
+  month=sep # "~15",
+  publisher={Google Patents},
+  note={US Patent 10,778,932},
+
+  type={patent},
+  url={https://patents.google.com/patent/US10778932B2/en}
+}
+
+@misc{wozniak2020video,
+  title={Video frame brightness filter},
+  author={Wozniak, Matthew Richard and Kucukgoz, Mehmet and Pollock, Holly Helene and Neal, Ian Glen and Vertido, Rafael Vincent Prieto},
+  year={2020},
+  month=jun # "~11",
+  publisher={Google Patents},
+  note={US Patent App. 16/210,380},
+
+  type={patent},
+  url={https://patents.google.com/patent/US20200184247A1/en}
+}
+
+@misc{wozniak2020color,
+  title={Color-specific video frame brightness filter},
+  author={Wozniak, Matthew Richard and Kucukgoz, Mehmet and Pollock, Holly Helene and Neal, Ian Glen and Vertido, Rafael Vincent Prieto},
+  year={2020},
+  month=jun # "~11",
+  publisher={Google Patents},
+  note={US Patent App. 16/210,667},
+
+  type={patent},
+  url={https://patents.google.com/patent/US20200186764A1/en}
+}
+
+@inproceedings {neal2021rethinking,
+  title = {{Rethinking File Mapping for Persistent Memory}},
+  booktitle = {19th {USENIX} Conference on File and Storage Technologies ({FAST} 21)},
+  author={Ian Neal and Gefei Zuo and Eric Shiple and Tanvir Ahmed Khan and Youngjin Kwon and Simon Peter and Baris Kasikci},
+  year = {2021},
+  url = {https://www.usenix.org/conference/fast21/presentation/neal},
+  publisher = {{USENIX} Association},
+  month = feb,
+
+  type={peer-reviewed},
+  abbr={FAST'21},
+  selected={true},
+}
+
+@inproceedings {neal2021hippocrates,
+  title = {{HIPPOCRATES: Healing Persistent Memory Bugs Without Doing Any Harm}},
+  booktitle = {To appear In Proceedings of the Twenty-Sixth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+  author={Ian Neal and Andrew Quinn and Baris Kasikci},
+  year = {2021},
+  url = {https://www.usenix.org/conference/fast21/presentation/neal},
+  publisher = {{USENIX} Association},
+  month = apr,
+
+  type={peer-reviewed},
+  abbr={ASPLOS'21},
+  selected={true},
+  url={https://asplos-conference.org/papers/},
+  ext_abs={hippo_ea.pdf}
+}
+
+@inproceedings{loughlin2021dolma,
+  title = {{DOLMA: Securing Speculation with the Principle of Transient Non-Observability}},
+  author={Loughlin, Kevin and Neal, Ian and Ma, Jiacheng and Tsai, Elisa and Weisse, Ofir and Narayanasamy, Satish and Kasikci, Baris},
+  booktitle = {30th {USENIX} Security Symposium ({USENIX} Security 21)},
+  year = {2021},
+  address = {Vancouver, B.C.},
+  publisher = {{USENIX} Association},
+  month = aug,
+
+  pdf={dolma_preprint.pdf},
+  type={peer-reviewed},
+  url={https://www.usenix.org/conference/usenixsecurity21/presentation/loughlin},
+  abbr={USENIX Sec'21},
+  abstract={Modern processors allow attackers to leak data during transient (i.e., mis-speculated) execution through microarchitectural covert timing channels. While initial defenses were channel-specific, recent solutions employ speculative information flow control in an attempt to automatically mitigate attacks via any channel. However, we demonstrate that the current state-of-the-art defense fails to mitigate attacks using speculative stores, still allowing arbitrary data leakage during transient execution. Furthermore, we show that the state of the art does not scale to protect data in registers, incurring 30.8–63.4% overhead on SPEC 2017, depending on the threat model.
+
+  We then present DOLMA, the first defense to automatically provide comprehensive protection against all known transient execution attacks. DOLMA combines a lightweight speculative information flow control scheme with a set of secure performance optimizations. By enforcing a novel principle of transient non-observability, DOLMA ensures that a time slice on a core provides a unit of isolation in the context of existing attacks. Accordingly, DOLMA can allow speculative TLB/L1 cache accesses and variable-time arithmetic without loss of security. On SPEC 2017, DOLMA achieves comprehensive protection of data in memory at 10.2–29.7% overhead, adding protection for data in registers at 22.6–42.2% overhead (8.2–21.2% less than the state of the art, with greater security).},
+
 }
