@@ -1,7 +1,11 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2020-12-11
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+<!-- A simple inline announcement. -->
+<!-- A simple inline announcement with Markdown emoji! :sparkles: :smile: -->
+
+My publication, ["Rethinking File Mapping Structures for Persistent Memory"](pub), has been accepted to FAST '21!
+

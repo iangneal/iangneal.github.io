@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2020-08-15
 inline: true
 ---
 
 <!-- A simple inline announcement. -->
 
-My publication, ["Rethinking File Mapping Structures for Persistent Memory"](pub), has been accepted to FAST '21!
+[<span style="font-variant:small-caps;">Agamotto</span>](pub) has been accepted to OSDI '20!
