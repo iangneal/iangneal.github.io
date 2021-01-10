@@ -17,15 +17,17 @@ layout: default
           Documentation: https://getbootstrap.com/docs/4.1/content/tables/
         #} -->
         <div class="table-responsive">
-          <table class="table table-sm table-borderless table-striped">
+          
 
           {% assign news = site.news | reverse %}
           {% assign last_year = "0" %}
           {% for item in news %}
             {% assign curr_year = item.date | date: "%Y" %}
             {% if last_year != curr_year %}
+              {% if last_year != "0" %} </table> {% endif %}
               {% assign last_year = curr_year %}
               <h2 class="year">{{ last_year }}</h2>
+              <table class="table table-sm table-borderless table-striped">
             {% endif %}
             <tr>
               <!-- <th scope="row">{{ item.date | date: "%b %-d" }}</th> -->
@@ -39,7 +41,7 @@ layout: default
               </td>
             </tr>
           {% endfor %}
-          </table>
+
         </div>
       {% else %}
         <p>No news so far...</p>
