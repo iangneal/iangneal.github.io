@@ -79,7 +79,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+# disqus_shortname: al-folio # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -91,6 +91,9 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+  talks:
+    output: true
+    permalink: /talks/:path/
   projects:
     output: true
     permalink: /projects/:path/
