@@ -131,6 +131,14 @@
     {% endif %}
     </div>
 
+    <!-- Awards and such. -->
+
+    {% if entry.awards %}
+    <div class="periodical">
+      <b><em>{{entry.awards}}</em></b>
+    </div>
+    {% endif %}
+
     <!-- Hidden abstract block -->
     {% if entry.abstract %}
     <div class="abstract hidden">

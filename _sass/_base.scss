@@ -446,10 +446,12 @@ footer.sticky-bottom {
         transition: all 0.15s ease;
       }
       div.abstract.hidden {
-        border: dashed 1px white;
+        // border: dashed 1px white;
+        border: none;
       }
       div.abstract.hidden.open {
-        border-color: $grey-color;
+        // border-color: $grey-color;
+        border: dashed 1px $grey-color;
       }
     }
   }

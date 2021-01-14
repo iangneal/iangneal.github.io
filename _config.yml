@@ -126,6 +126,7 @@ exclude:
   - README.md
   - _pages/teaching
   - _pages/projects
+  - _pages/talks
 
 # Plug-ins
 plugins:
