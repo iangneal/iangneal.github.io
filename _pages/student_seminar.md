@@ -7,7 +7,7 @@ nav: false
 ---
 
 ### Information
-
+---
 The Systems Reading Group (SRG) Student Seminar is a new, virtual talk series
 which the [UMich CSE Systems Group](https://systems.engin.umich.edu/) is hosting Thursdays at [12:30 PM EST](https://www.timeanddate.com/worldclock/converter.html?iso=20210128T173000&p1=784).
 
@@ -21,9 +21,13 @@ This series was inspired by [UW's system seminar course](https://courses.cs.wash
 
 [**Sign-up here!**][google-form] 
 
-### Upcoming Events
 
-_Coming soon._
+### Upcoming Events
+---
+
+_All events are at 12:30PM EST unless noted otherwise._
+
+##### **Feb. 4th, 2021**: [Yunhao Zhang](https://dolobyte.net/), [_Byzantine Ordered Consensus without Byzantine Oligarchy_](https://www.usenix.org/conference/osdi20/presentation/zhang-yunhao)
 
 
 [google-form]: https://forms.gle/Y2FcoZ6ppDM4SiDP6
