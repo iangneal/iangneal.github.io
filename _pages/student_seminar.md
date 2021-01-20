@@ -27,7 +27,7 @@ This series was inspired by [UW's system seminar course](https://courses.cs.wash
 
 _All events are at 12:30PM EST unless noted otherwise._
 
-##### **Feb. 4th, 2021**: [Yunhao Zhang](https://dolobyte.net/), [_Byzantine Ordered Consensus without Byzantine Oligarchy_](https://www.usenix.org/conference/osdi20/presentation/zhang-yunhao)
+##### **Feb. 4th, 2021**: [Yunhao Zhang](https://dolobyte.net/) (Ph.D. Student, Cornell University), [_Byzantine Ordered Consensus without Byzantine Oligarchy_](https://www.usenix.org/conference/osdi20/presentation/zhang-yunhao) (OSDI '20, Awarded Best Paper)
 
 
 [google-form]: https://forms.gle/Y2FcoZ6ppDM4SiDP6
