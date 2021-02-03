@@ -182,6 +182,29 @@ a, table.table a {
   }
 }
 
+// Student Seminar
+
+.seminar {
+  th {
+    font-size: 1rem;
+  }
+  td {
+    font-size: 1.2rem;
+  }
+  
+  .author {
+    font-weight: bolder;
+  }
+
+  .paper {
+    font-style: italic;
+  }
+
+  .conference {
+    text-indent: 1rem;
+  }
+}
+
 // Selected publications
 
 .publications {
