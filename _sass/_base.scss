@@ -187,9 +187,11 @@ a, table.table a {
 .seminar {
   th {
     font-size: 1rem;
+    color: var(--global-text-color);
   }
   td {
     font-size: 1.2rem;
+    color: var(--global-text-color);
   }
   
   .author {
