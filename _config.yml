@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Ian
 middle_name: Glen
 last_name: Neal
-email: iangneal@umich.com
+email: iangneal@umich.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   PhD Candidate in Computer Science with a focus in Systems and
   Computer Architecture.

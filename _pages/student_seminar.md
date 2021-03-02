@@ -74,6 +74,20 @@ _All events are at 12:30PM EST unless noted otherwise._
 </tr>
 
 
+<tr>
+    <th scope="row"> Mar. 11th, 2021 </th>
+    <td>
+
+    <a href="https://cs.uwaterloo.ca/~b2alkhat/" class="author">Basil Alkhatib</a> (Masters Student, University of Waterloo) <br/>
+
+    <a href="https://www.usenix.org/conference/osdi20/presentation/alfatafta" class="paper">Toward a Generic Fault Tolerance Technique for Partial Network Partitioning</a> <br/>
+
+    <p class="conference">(OSDI '20)</p>
+
+    </td>
+</tr>
+
+
 </tbody>
 </table>
 </div>
