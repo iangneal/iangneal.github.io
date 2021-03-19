@@ -124,6 +124,21 @@ notes: https://github.com/inukshuk/jekyll-scholar
   selected={true},
 }
 
+@inproceedings{neal2021towards,
+  title = {{Towards Bug-free Persistent Memory Applications}},
+  author={Neal, Ian and Quinn, Andrew and Kasikci, Baris},
+  booktitle = {{12th Non-Volatile Memories Workshop (NVMW'21)}},
+  year = {2021},
+  month = mar,
+
+  pdf={nvmw2021-paper38-final.pdf},
+  type={workshop},
+  url={http://nvmw.ucsd.edu/program/#paper-38},
+  abbr={NVMW'21},
+  abstract={Persistent Memory (PM) aims to revolutionize the storage-memory hierarchy, but programming these systems is error-prone. Our work investigates how to to help developers write better, bug-free PM applications by automatically debugging them. We first perform a study of bugs in persistent memory applications to identify the opportunities and pain-points of debugging these systems. Then, we discuss our work on AGAMOTTO, a generic and extensible system for automatically detecting PM bugs. Unlike existing tools that rely on extensive test cases or annotations, AGAMOTTO automatically detects bugs in PM systems by extending symbolic execution to model persistent memory. AGAMOTTO has so far identified 84 new bugs in 5 different PM applications and frameworks while incurring no false positives. We then discuss HIPPOCRATES, a system that automatically fixes bugs in PM systems. HIPPOCRATES “does no harm”: its fixes are guaranteed to fix an PM bug without introducing new bugs. We show that HIPPOCRATES produces fixes that are functionally equivalent to developer fixes and that HIPPOCRATES fixes have performance that rivals manually-developed code.},
+
+}
+
 @inproceedings {neal2021hippocrates,
   title = {{HIPPOCRATES: Healing Persistent Memory Bugs Without Doing Any Harm}},
   booktitle = {To appear In Proceedings of the Twenty-Sixth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
@@ -139,6 +154,24 @@ notes: https://github.com/inukshuk/jekyll-scholar
   url={https://asplos-conference.org/papers/},
   ext_abs={hippo_ea.pdf},
   pdf={hippocrates.pdf}
+}
+
+@inproceedings {khan2021dmon,
+author = {Tanvir Ahmed Khan and Ian Neal and Gilles Pokam and Barzan Mozafari and Baris Kasikci},
+title = {{DMon: Efficient Detection and Correction of Data Locality Problems using Selective Profiling}},
+booktitle = {15th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 21)},
+year = {2021},
+publisher = {{USENIX} Association},
+month = jul,
+
+selected={false},
+type={peer-reviewed},
+abbr={OSDI'21},
+abstract={Poor data locality hurts an application’s performance. While compiler-based techniques have been proposed to improve data locality, they depend on heuristics, which can sometimes hurt performance. Therefore, developers typically find data locality issues via dynamic profiling and repair them manually. Alas, existing profiling techniques incur high overhead and cannot be deployed in production, where programs may exhibit previously-unseen performance problems.
+
+We present selective profiling, a technique that locates data locality problems with low-enough overhead that is suitable for production use. To achieve low overhead, selective profiling gathers runtime execution information selectively and incrementally. Using selective profiling, we build DMon, a system that can automatically locate data locality problems in production, identify access patterns that hurt locality, and repair such patterns using targeted optimizations.
+
+Thanks to selective profiling, DMon’s profiling overhead is 1.36% on average, making it feasible for production use. DMon’s targeted optimizations provide 16.83% speedup on average (up to 53.14%), compared to a baseline that uses the highest level of compiler optimization. DMon speeds up PostgreSQL, one of the most popular database systems, by 6.64% on average (up to 17.48%).}
 }
 
 @inproceedings{loughlin2021dolma,
@@ -159,3 +192,4 @@ notes: https://github.com/inukshuk/jekyll-scholar
   We then present DOLMA, the first defense to automatically provide comprehensive protection against all known transient execution attacks. DOLMA combines a lightweight speculative information flow control scheme with a set of secure performance optimizations. By enforcing a novel principle of transient non-observability, DOLMA ensures that a time slice on a core provides a unit of isolation in the context of existing attacks. Accordingly, DOLMA can allow speculative TLB/L1 cache accesses and variable-time arithmetic without loss of security. On SPEC 2017, DOLMA achieves comprehensive protection of data in memory at 10.2–29.7% overhead, adding protection for data in registers at 22.6–42.2% overhead (8.2–21.2% less than the state of the art, with greater security).},
 
 }
+
