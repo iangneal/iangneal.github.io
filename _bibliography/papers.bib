@@ -14,7 +14,7 @@ notes: https://github.com/inukshuk/jekyll-scholar
   abbr={Honors Thesis},
   pdf={honors_thesis.pdf},
   url={https://apps.cs.utexas.edu/apps/tech-reports/27249},
-  abs={In this paper I explore the value of transactional file systems by showing how such systems can benefit existing applications while not adding additional complexity to the codebase. I first discuss the concept of transactions in computing and how transactional semantics are used to provide consistency and durability to an application’s state. I examine a new work developed at the University of Texas, TxFS, which provides a very simple and powerful transactional interface. I then introduce how existing systems can be modified to take advantage of TxFS by modifying SQLite, a widely used embedded database, and by modifying OpenLDAP, a widely used implementation of the Lightweight Directory Access Protocol. These modified systems benefit from running on TxFS by having a simplified transactional system, reduced locking, no user-level logging, and enhanced support for multithreaded operations. Additionally, I show how simple it is to port existing systems to TxFS, and demonstrate how easy it would be for other systems to adopt TxFS to ensure durability and consistency for their users.}
+  abstract={In this paper I explore the value of transactional file systems by showing how such systems can benefit existing applications while not adding additional complexity to the codebase. I first discuss the concept of transactions in computing and how transactional semantics are used to provide consistency and durability to an application’s state. I examine a new work developed at the University of Texas, TxFS, which provides a very simple and powerful transactional interface. I then introduce how existing systems can be modified to take advantage of TxFS by modifying SQLite, a widely used embedded database, and by modifying OpenLDAP, a widely used implementation of the Lightweight Directory Access Protocol. These modified systems benefit from running on TxFS by having a simplified transactional system, reduced locking, no user-level logging, and enhanced support for multithreaded operations. Additionally, I show how simple it is to port existing systems to TxFS, and demonstrate how easy it would be for other systems to adopt TxFS to ensure durability and consistency for their users.}
 
 }
 
@@ -122,6 +122,10 @@ notes: https://github.com/inukshuk/jekyll-scholar
   type={peer-reviewed},
   abbr={FAST'21},
   selected={true},
+  pdf={fast21-neal.pdf},
+  abstract={Persistent main memory (PM) dramatically improves IO performance. We find that this results in file systems on PM spending as much as 70% of the IO path performing file mapping (mapping file offsets to physical locations on storage media) on real workloads. However, even PM-optimized file systems perform file mapping based on decades-old assumptions. It is now critical to revisit file mapping for PM.
+
+  We explore the design space for PM file mapping by building and evaluating several file-mapping designs, including different data structure, caching, as well as meta-data and block allocation approaches, within the context of a PM-optimized file system. Based on our findings, we design HashFS, a hash-based file mapping approach. HashFS uses a single hash operation for all mapping and allocation operations, bypassing the file system cache, instead prefetching mappings via SIMD parallelism and caching translations explicitly. HashFS’s resulting low latency provides superior performance compared to alternatives. HashFS increases the throughput of YCSB on LevelDB by up to 45% over page-cached extent trees in the state-of-the-art Strata PM-optimized file system.}
 }
 
 @inproceedings{neal2021towards,
@@ -153,7 +157,33 @@ notes: https://github.com/inukshuk/jekyll-scholar
   selected={true},
   url={https://asplos-conference.org/papers/},
   ext_abs={hippo_ea.pdf},
-  pdf={hippocrates.pdf}
+  pdf={hippocrates.pdf},
+  abstract={Persistent memory (PM) technologies aim to revolutionize storage
+  systems, providing persistent storage at near-DRAM speeds. Alas,
+  programming PM systems is error-prone, as the misuse or omission
+  of the durability mechanisms (i.e., cache flushes and memory fences)
+  can lead to durability bugs (i.e., unflushed updates in CPU caches
+  that violate crash consistency). PM-specific testing and debugging
+  tools can help developers find these bugs, however even with such
+  tools, fixing durability bugs can be challenging. To determine the
+  reason behind this difficulty, we first study durability bugs and
+  find that although the solution to a durability bug seems simple,
+  the actual reasoning behind the fix can be complicated and timeconsuming. 
+  Overall, the severity of these bugs coupled with the
+  difficultly of developing fixes for them motivates us to consider
+  automated approaches to fixing durability bugs.
+  We introduce Hippocrates, a system that automatically fixes
+  durability bugs in PM systems. Hippocrates automatically performs the complex 
+  reasoning behind durability bug fixes, relieving
+  developers of time-consuming bug fixes. Hippocrates's fixes are
+  guaranteed to be safe, as they are guaranteed to not introduce new
+  bugs (``do no harm''). We use Hippocrates to automatically fix 23
+  durability bugs in real-world and research systems. We show that
+  Hippocrates produces fixes that are functionally equivalent to developer fixes. 
+  We then show that solely using Hippocrates’s fixes,
+  we can create a PM port of Redis which has performance rivaling
+  and exceeding the performance of a manually-developed PM-port
+  of Redis.}
 }
 
 @inproceedings {khan2021dmon,

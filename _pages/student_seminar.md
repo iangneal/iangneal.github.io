@@ -87,6 +87,32 @@ _All events are at 12:30PM EST unless noted otherwise._
     </td>
 </tr>
 
+<tr>
+    <th scope="row"> Mar. 18th, 2021 </th>
+    <td>
+
+    <a href="http://junchengyang.com" class="author">Juncheng Yang</a> (Ph.D. Student, Carnegie Mellon University) <br/>
+
+    <a href="https://www.usenix.org/conference/nsdi21/presentation/yang-juncheng" class="paper">Segcache: a memory-efficient and scalable in-memory key-value cache for small objects</a> <br/>
+
+    <p class="conference">(NSDI '21)</p>
+
+    </td>
+</tr>
+
+<tr>
+    <th scope="row"> Mar. 25th, 2021 </th>
+    <td>
+
+    <a href="https://gupta-suyash.github.io/" class="author">Suyash Gupta</a> (Ph.D. Candidate, UC Davis) <br/>
+
+    <a href="https://www.morganclaypool.com/doi/10.2200/S01068ED1V01Y202012DTM065" class="paper">Resilient and Scalable Architecture for Permissioned Blockchain Fabrics</a> <br/>
+
+    <p class="conference">(PhD Dissertation)</p>
+
+    </td>
+</tr>
+
 
 </tbody>
 </table>
