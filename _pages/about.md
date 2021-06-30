@@ -28,13 +28,16 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
 
-I am a third year PhD student studying Computer Science at the University of
+I am a PhD candidate studying Computer Science at the University of
 Michigan. I am advised by Professor [**Baris Kasikci**][baris-homepage].
 
-In my research, I want to eliminate the intellectual barrier-to-entry for developers who want to use emerging hardware to develop efficient and reliable systems. To this end, I aim to create tools which developers can use to automatically reason about the characteristics of new hardware so that they can better leverage its capabilities without
-sacrificing the correctness of their applications. My current focus is in the development of efficient and reliable
-systems using emerging persistent main memory technologies. I am also interested in developing verifiably secure
-hardware systems and tools which allow for easier development of secure systems.
+In my research, I want to eliminate the intellectual barrier-to-entry for 
+developers who want to use emerging hardware to develop efficient and reliable 
+systems. To this end, I aim to create tools which developers can use to 
+automatically reason about the characteristics of new hardware so that they can 
+better leverage its capabilities without sacrificing the correctness of their 
+applications. My current focus is in the development of efficient and reliable
+systems using emerging persistent main memory technologies.
 
 <!-- ## News
 

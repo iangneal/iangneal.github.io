@@ -133,6 +133,7 @@ plugins:
   - jekyll-email-protect
   - jekyll-github-metadata
   - jekyll-paginate-v2
+  - jekyll-pdf-embed
   - jekyll/scholar
   - jekyll-twitter-plugin
   - jemoji
