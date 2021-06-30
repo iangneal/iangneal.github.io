@@ -45,7 +45,7 @@ notes: https://github.com/inukshuk/jekyll-scholar
   selected={false},
   type={peer-reviewed},
   abbr={MICRO'19},
-  url={https://dl-acm-org.proxy.lib.umich.edu/doi/abs/10.1145/3352460.3358306},
+  url={https://dl.acm.org/doi/abs/10.1145/3352460.3358306},
   pdf={nda.pdf},
   abstract={Speculative execution attacks like Meltdown and Spectre work by accessing secret data in wrong-path execution. Secrets are then transmitted and recovered by the attacker via a covert channel. Existing mitigations either require code modifications, address only specific exploit techniques, or block only the cache covert channel. Rather than battling exploit techniques and covert channels one by one, we seek to close off speculative execution attacks at their source. Our key observation is that these attacks require a chain of dependent wrong-path instructions to access and transmit secret data. We propose NDA, a technique to restrict speculative data propagation. NDA breaks the attacks' wrong-path dependence chains while still allowing speculation and dynamic scheduling. We describe a design space of NDA variants that differ in the constraints they place on dynamic scheduling and the classes of speculative execution attacks they prevent. NDA preserves much of the performance advantage of out-of-order execution: on SPEC CPU 2017, NDA variants close 68-96% of the performance gap between in-order and unconstrained (insecure) out-of-order execution.}
 }
@@ -57,7 +57,6 @@ notes: https://github.com/inukshuk/jekyll-scholar
   year = {2020},
   isbn = {978-1-939133-19-9},
   pages = {1047--1064},
-  url = {https://www.usenix.org/conference/osdi20/presentation/neal},
   publisher = {{USENIX} Association},
   month = nov,
 
@@ -145,11 +144,11 @@ notes: https://github.com/inukshuk/jekyll-scholar
 
 @inproceedings {neal2021hippocrates,
   title = {{HIPPOCRATES: Healing Persistent Memory Bugs Without Doing Any Harm}},
-  booktitle = {(to appear) Proceedings of the Twenty-Sixth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
+  booktitle = {Proceedings of the Twenty-Sixth International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS)},
   author={Ian Neal and Andrew Quinn and Baris Kasikci},
   year = {2021},
-  url = {https://www.usenix.org/conference/fast21/presentation/neal},
-  publisher = {{USENIX} Association},
+  url = {https://dl.acm.org/doi/abs/10.1145/3445814.3446694},
+  publisher = {Association for Computing Machinery},
   month = apr,
 
   type={peer-reviewed},
@@ -196,8 +195,13 @@ month = jul,
 
 selected={false},
 type={peer-reviewed},
+url={https://www.usenix.org/conference/osdi21/presentation/khan},
+pdf={dmon_preprint.pdf},
 abbr={OSDI'21},
-abstract={Poor data locality hurts an application’s performance. While compiler-based techniques have been proposed to improve data locality, they depend on heuristics, which can sometimes hurt performance. Therefore, developers typically find data locality issues via dynamic profiling and repair them manually. Alas, existing profiling techniques incur high overhead and cannot be deployed in production, where programs may exhibit previously-unseen performance problems.
+abstract={Poor data locality hurts an application’s performance. While 
+compiler-based techniques have been proposed to improve data locality, 
+they depend on heuristics, which can sometimes hurt performance. Therefore,
+developers typically find data locality issues via dynamic profiling and repair them manually. Alas, existing profiling techniques incur high overhead and cannot be deployed in production, where programs may exhibit previously-unseen performance problems.
 
 We present selective profiling, a technique that locates data locality problems with low-enough overhead that is suitable for production use. To achieve low overhead, selective profiling gathers runtime execution information selectively and incrementally. Using selective profiling, we build DMon, a system that can automatically locate data locality problems in production, identify access patterns that hurt locality, and repair such patterns using targeted optimizations.
 
@@ -207,7 +211,7 @@ Thanks to selective profiling, DMon’s profiling overhead is 1.36% on average, 
 @inproceedings{loughlin2021dolma,
   title = {{DOLMA: Securing Speculation with the Principle of Transient Non-Observability}},
   author={Loughlin, Kevin and Neal, Ian and Ma, Jiacheng and Tsai, Elisa and Weisse, Ofir and Narayanasamy, Satish and Kasikci, Baris},
-  booktitle = {30th {USENIX} Security Symposium ({USENIX} Security 21)},
+  booktitle = {(to appear) 30th {USENIX} Security Symposium ({USENIX} Security 21)},
   year = {2021},
   address = {Vancouver, B.C.},
   publisher = {{USENIX} Association},
@@ -217,9 +221,28 @@ Thanks to selective profiling, DMon’s profiling overhead is 1.36% on average, 
   type={peer-reviewed},
   url={https://www.usenix.org/conference/usenixsecurity21/presentation/loughlin},
   abbr={USENIX Sec'21},
-  abstract={Modern processors allow attackers to leak data during transient (i.e., mis-speculated) execution through microarchitectural covert timing channels. While initial defenses were channel-specific, recent solutions employ speculative information flow control in an attempt to automatically mitigate attacks via any channel. However, we demonstrate that the current state-of-the-art defense fails to mitigate attacks using speculative stores, still allowing arbitrary data leakage during transient execution. Furthermore, we show that the state of the art does not scale to protect data in registers, incurring 30.8–63.4% overhead on SPEC 2017, depending on the threat model.
+  abstract={Modern processors allow attackers to leak data during transient 
+  (i.e., mis-speculated) execution through microarchitectural covert timing 
+  channels. While initial defenses were channel-specific, recent solutions 
+  employ speculative information flow control in an attempt to automatically 
+  mitigate attacks via any channel. However, we demonstrate that the current 
+  state-of-the-art defense fails to mitigate attacks using speculative stores, 
+  still allowing arbitrary data leakage during transient execution. Furthermore, 
+  we show that the state of the art does not scale to protect data in registers, 
+  incurring 30.8–63.4% overhead on SPEC 2017, depending on the threat model.
 
-  We then present DOLMA, the first defense to automatically provide comprehensive protection against all known transient execution attacks. DOLMA combines a lightweight speculative information flow control scheme with a set of secure performance optimizations. By enforcing a novel principle of transient non-observability, DOLMA ensures that a time slice on a core provides a unit of isolation in the context of existing attacks. Accordingly, DOLMA can allow speculative TLB/L1 cache accesses and variable-time arithmetic without loss of security. On SPEC 2017, DOLMA achieves comprehensive protection of data in memory at 10.2–29.7% overhead, adding protection for data in registers at 22.6–42.2% overhead (8.2–21.2% less than the state of the art, with greater security).},
+  We then present DOLMA, the first defense to automatically provide 
+  comprehensive protection against all known transient execution attacks. 
+  DOLMA combines a lightweight speculative information flow control scheme with 
+  a set of secure performance optimizations. By enforcing a novel principle of 
+  transient non-observability, DOLMA ensures that a time slice on a core 
+  provides a unit of isolation in the context of existing attacks. Accordingly,
+  DOLMA can allow speculative TLB/L1 cache accesses and variable-time arithmetic
+  without loss of security. On SPEC 2017, DOLMA achieves comprehensive
+  protection of data in memory at 10.2–29.7% overhead, adding protection for
+  data in registers at 22.6–42.2% overhead (8.2–21.2% less than the state of
+  the art, with greater security).},
+
 
 }
 
