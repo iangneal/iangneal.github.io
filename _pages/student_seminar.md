@@ -4,6 +4,8 @@ title: Student Seminar
 permalink: /seminar/
 description: <i>Systems Reading Group Student Seminar, Hosted by the University of Michigan.</i>
 nav: true
+redirect_to:
+    https://about.iangneal.io/srg-student-seminar/
 ---
 
 ##### TL;DR: [**Sign-up here if you like systems stuff!**][google-form] 
