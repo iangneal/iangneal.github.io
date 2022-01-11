@@ -124,9 +124,9 @@ include:
 exclude: 
   - vendor
   - README.md
-  - _pages/teaching
   - _pages/projects
   - _pages/talks
+  - _pages/student_seminar
 
 # Plug-ins
 plugins:

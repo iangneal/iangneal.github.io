@@ -66,6 +66,7 @@ notes: https://github.com/inukshuk/jekyll-scholar
   url={https://www.usenix.org/conference/osdi20/presentation/neal},
   pdf={agamotto.pdf},
   awards={Awarded IEEE Micro Top Picks 2021 Honorable Mention!},
+  talk={https://youtu.be/Cl2cRtTGh_s},
   abstract={Persistent Memory (PM) can be used by applications to directly and quickly persist any data structure, without the overhead of a file system. However, writing PM applications that are simultaneously correct and efficient is challenging. As a result, PM applications contain correctness and performance bugs. Prior work on testing PM systems has low bug coverage as it relies primarily on extensive test cases and developer annotations.
 
   In this paper we aim to build a system for more thoroughly testing PM applications. We inform our design using a detailed study of 63 bugs from popular PM projects. We identify two application-independent patterns of PM misuse which account for the majority of bugs in our study and can be detected automatically. The remaining application-specific bugs can be detected using compact custom oracles provided by developers.
@@ -122,9 +123,26 @@ notes: https://github.com/inukshuk/jekyll-scholar
   abbr={FAST'21},
   selected={true},
   pdf={fast21-neal.pdf},
-  abstract={Persistent main memory (PM) dramatically improves IO performance. We find that this results in file systems on PM spending as much as 70% of the IO path performing file mapping (mapping file offsets to physical locations on storage media) on real workloads. However, even PM-optimized file systems perform file mapping based on decades-old assumptions. It is now critical to revisit file mapping for PM.
+  slides={https://www.usenix.org/sites/default/files/conference/protected-files/fast21_slides_neal.pdf},
+  talk={https://youtu.be/YDnW-wXd6bc},
+  abstract={Persistent main memory (PM) dramatically improves IO performance. 
+  We find that this results in file systems on PM spending as much as 70% of 
+  the IO path performing file mapping (mapping file offsets to physical 
+  locations on storage media) on real workloads. However, even PM-optimized 
+  file systems perform file mapping based on decades-old assumptions. 
+  It is now critical to revisit file mapping for PM.
 
-  We explore the design space for PM file mapping by building and evaluating several file-mapping designs, including different data structure, caching, as well as meta-data and block allocation approaches, within the context of a PM-optimized file system. Based on our findings, we design HashFS, a hash-based file mapping approach. HashFS uses a single hash operation for all mapping and allocation operations, bypassing the file system cache, instead prefetching mappings via SIMD parallelism and caching translations explicitly. HashFS’s resulting low latency provides superior performance compared to alternatives. HashFS increases the throughput of YCSB on LevelDB by up to 45% over page-cached extent trees in the state-of-the-art Strata PM-optimized file system.}
+  We explore the design space for PM file mapping by building and evaluating 
+  several file-mapping designs, including different data structure, caching, 
+  as well as meta-data and block allocation approaches, within the context of 
+  a PM-optimized file system. Based on our findings, we design HashFS, a 
+  hash-based file mapping approach. HashFS uses a single hash operation for 
+  all mapping and allocation operations, bypassing the file system cache, 
+  instead prefetching mappings via SIMD parallelism and caching translations 
+  explicitly. HashFS's resulting low latency provides superior performance 
+  compared to alternatives. HashFS increases the throughput of YCSB on 
+  LevelDB by up to 45% over page-cached extent trees in the state-of-the-art 
+  Strata PM-optimized file system.}
 }
 
 @inproceedings{neal2021towards,
@@ -138,7 +156,27 @@ notes: https://github.com/inukshuk/jekyll-scholar
   type={workshop},
   url={http://nvmw.ucsd.edu/program/#paper-38},
   abbr={NVMW'21},
-  abstract={Persistent Memory (PM) aims to revolutionize the storage-memory hierarchy, but programming these systems is error-prone. Our work investigates how to to help developers write better, bug-free PM applications by automatically debugging them. We first perform a study of bugs in persistent memory applications to identify the opportunities and pain-points of debugging these systems. Then, we discuss our work on AGAMOTTO, a generic and extensible system for automatically detecting PM bugs. Unlike existing tools that rely on extensive test cases or annotations, AGAMOTTO automatically detects bugs in PM systems by extending symbolic execution to model persistent memory. AGAMOTTO has so far identified 84 new bugs in 5 different PM applications and frameworks while incurring no false positives. We then discuss HIPPOCRATES, a system that automatically fixes bugs in PM systems. HIPPOCRATES “does no harm”: its fixes are guaranteed to fix an PM bug without introducing new bugs. We show that HIPPOCRATES produces fixes that are functionally equivalent to developer fixes and that HIPPOCRATES fixes have performance that rivals manually-developed code.},
+  short_talk={https://youtu.be/M1X_eYDzyYk},
+  talk={https://www.youtube.com/watch?v=hCeq95rALKI},
+  slides={http://nvmw.ucsd.edu/nvmw2021-program/nvmw2021-data/nvmw2021-paper38-presentation_slides.pptx},
+  abstract={Persistent Memory (PM) aims to revolutionize the storage-memory 
+  hierarchy, but programming these systems is error-prone. 
+  Our work investigates how to to help developers write better, 
+  bug-free PM applications by automatically debugging them. 
+  We first perform a study of bugs in persistent memory applications to 
+  identify the opportunities and pain-points of debugging these systems. 
+  Then, we discuss our work on AGAMOTTO, a generic and extensible system 
+  for automatically detecting PM bugs. Unlike existing tools that rely on 
+  extensive test cases or annotations, AGAMOTTO automatically detects bugs in 
+  PM systems by extending symbolic execution to model persistent memory. 
+  AGAMOTTO has so far identified 84 new bugs in 5 different PM applications and 
+  frameworks while incurring no false positives. We then discuss HIPPOCRATES, 
+  a system that automatically fixes bugs in PM systems. 
+  HIPPOCRATES “does no harm”: its fixes are guaranteed to fix an PM bug without
+  introducing new bugs. 
+  We show that HIPPOCRATES produces fixes that are functionally equivalent to 
+  developer fixes and that HIPPOCRATES fixes have performance that rivals m
+  anually-developed code.},
 
 }
 
@@ -185,26 +223,26 @@ notes: https://github.com/inukshuk/jekyll-scholar
 }
 
 @inproceedings {khan2021dmon,
-author = {Tanvir Ahmed Khan and Ian Neal and Gilles Pokam and Barzan Mozafari and Baris Kasikci},
-title = {{DMon: Efficient Detection and Correction of Data Locality Problems using Selective Profiling}},
-booktitle = {15th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 21)},
-year = {2021},
-publisher = {{USENIX} Association},
-month = jul,
+    author = {Tanvir Ahmed Khan and Ian Neal and Gilles Pokam and Barzan Mozafari and Baris Kasikci},
+    title = {{DMon: Efficient Detection and Correction of Data Locality Problems using Selective Profiling}},
+    booktitle = {15th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 21)},
+    year = {2021},
+    publisher = {{USENIX} Association},
+    month = jul,
 
-selected={false},
-type={peer-reviewed},
-url={https://www.usenix.org/conference/osdi21/presentation/khan},
-pdf={dmon.pdf},
-abbr={OSDI'21},
-abstract={Poor data locality hurts an application’s performance. While 
-compiler-based techniques have been proposed to improve data locality, 
-they depend on heuristics, which can sometimes hurt performance. Therefore,
-developers typically find data locality issues via dynamic profiling and repair them manually. Alas, existing profiling techniques incur high overhead and cannot be deployed in production, where programs may exhibit previously-unseen performance problems.
+    selected={false},
+    type={peer-reviewed},
+    url={https://www.usenix.org/conference/osdi21/presentation/khan},
+    pdf={dmon.pdf},
+    abbr={OSDI'21},
+    abstract={Poor data locality hurts an application’s performance. While 
+    compiler-based techniques have been proposed to improve data locality, 
+    they depend on heuristics, which can sometimes hurt performance. Therefore,
+    developers typically find data locality issues via dynamic profiling and repair them manually. Alas, existing profiling techniques incur high overhead and cannot be deployed in production, where programs may exhibit previously-unseen performance problems.
 
-We present selective profiling, a technique that locates data locality problems with low-enough overhead that is suitable for production use. To achieve low overhead, selective profiling gathers runtime execution information selectively and incrementally. Using selective profiling, we build DMon, a system that can automatically locate data locality problems in production, identify access patterns that hurt locality, and repair such patterns using targeted optimizations.
+    We present selective profiling, a technique that locates data locality problems with low-enough overhead that is suitable for production use. To achieve low overhead, selective profiling gathers runtime execution information selectively and incrementally. Using selective profiling, we build DMon, a system that can automatically locate data locality problems in production, identify access patterns that hurt locality, and repair such patterns using targeted optimizations.
 
-Thanks to selective profiling, DMon’s profiling overhead is 1.36% on average, making it feasible for production use. DMon’s targeted optimizations provide 16.83% speedup on average (up to 53.14%), compared to a baseline that uses the highest level of compiler optimization. DMon speeds up PostgreSQL, one of the most popular database systems, by 6.64% on average (up to 17.48%).}
+    Thanks to selective profiling, DMon’s profiling overhead is 1.36% on average, making it feasible for production use. DMon’s targeted optimizations provide 16.83% speedup on average (up to 53.14%), compared to a baseline that uses the highest level of compiler optimization. DMon speeds up PostgreSQL, one of the most popular database systems, by 6.64% on average (up to 17.48%).}
 }
 
 @inproceedings{loughlin2021dolma,
@@ -241,7 +279,22 @@ Thanks to selective profiling, DMon’s profiling overhead is 1.36% on average, 
   protection of data in memory at 10.2–29.7% overhead, adding protection for
   data in registers at 22.6–42.2% overhead (8.2–21.2% less than the state of
   the art, with greater security).},
+}
 
+@inproceedings{neal2021pm_preview,
+    title={Preview: Persistent Memory},
+    author={Ian Neal},
+    booktitle = {15th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 21)},
+    year = {2021},
+    publisher = {{USENIX} Association},
+    month = jul,
 
+    selected={false},
+    type={invited-talk},
+    abbr={OSDI'21},
+
+    url={https://www.usenix.org/conference/osdi21/presentation/preview-persistent-memory},
+    talk={https://youtu.be/hQjMyjt_x5A},
+    slides={https://www.usenix.org/system/files/preview_session_slides_neal.pdf},
 }
 

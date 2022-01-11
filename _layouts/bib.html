@@ -65,6 +65,8 @@
         <em>In {{entry.booktitle}}</em>
       {% elsif entry.type == "peer-reviewed" %}
         <em>In {{entry.booktitle}}<br></em>
+      {% elsif entry.type == "invited-talk" %}
+        <em>At {{entry.booktitle}}<br></em>
       {% endif %}
       {% if entry.year and entry.month %}
         {{entry.month | date: "%B"}} {{entry.year}}
@@ -124,6 +126,9 @@
       {% else %}
       <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Slides</a>
       {% endif %}
+    {% endif %}
+    {% if entry.talk %}
+      <a href="{{ entry.talk }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Talk</a>
     {% endif %}
     {% if entry.url %}
       <a href="{{ entry.url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Url</a>
