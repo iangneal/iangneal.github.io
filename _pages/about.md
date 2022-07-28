@@ -28,14 +28,11 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
 
-I am a PhD candidate studying Computer Science at the University of
-Michigan. I am advised by Professor [**Baris Kasikci**][baris-homepage].
+I am a PhD candidate studying Computer Science and Engineering at the University of Michigan. 
+I am advised by Professor [**Baris Kasikci**][baris-homepage].
 
-In my research, I want to help developers write correct and efficient applications.
-To this end, I aim to design tools that allow developers to automatically reason
-about how their programs behave so that they can automatically find and repair bugs without
-having to understand how their code may be running on new, complex hardware (e.g.,
-how updates are ordered in concurrent and/or persistent memory systems). My
-current focus is on automated detection of semantic bugs.
+I develop new methods for automatically reasoning about the reliability and performance of real-world systems. 
+My work focuses on building tools that leverage information about bugs and program behavior that has been gathered using principled, data-driven techniques to help developers recognize, reproduce, and resolve incidents and system bugs.
+I am also broadly interested in hardware-software co-design and the design of secure systems.
 
 [baris-homepage]: https://web.eecs.umich.edu/~barisk/
