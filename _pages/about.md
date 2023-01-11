@@ -4,8 +4,7 @@ title: about
 permalink: /
 # description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 description: >
-  <i> PhD Candidate in Computer Science with a focus in Systems and
-  Computer Architecture. </i>
+  <i> PhD Candidate in Computer Science with a focus in building debugging tools. </i>
 
 profile:
   align: left
@@ -27,15 +26,19 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
+<i class="fas fa-exclamation-circle"></i>
+**I am currently looking for jobs in both academic and industrial research, as I am on track to graduate in Summer 2023! Please contact me at <a href="mailto:{{ site.email | encode_email }}">{{site.email}}</a> if you are hiring in this cycle.**
+<i class="fas fa-exclamation-circle"></i>
 
 I am a PhD candidate studying Computer Science at the University of
 Michigan. I am advised by Professor [**Baris Kasikci**][baris-homepage].
 
 In my research, I want to help developers write correct and efficient applications.
 To this end, I aim to design tools that allow developers to automatically reason
-about how their programs behave so that they can automatically find and repair bugs without
+about how their programs behave so that they can automatically find, reproduce, and repair bugs without
 having to understand how their code may be running on new, complex hardware (e.g.,
 how updates are ordered in concurrent and/or persistent memory systems). My
-current focus is on automated detection of semantic bugs.
+current focus is on automatically reproducing incidents from production systems
+and on the automated detection of semantic bugs.
 
 [baris-homepage]: https://web.eecs.umich.edu/~barisk/

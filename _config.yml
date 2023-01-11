@@ -56,7 +56,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 
 twitter_username: iangneal
 # medium_username: iangneal
-github_username: Dahca
+github_username: iangneal
 linkedin_username: ianglenneal
 scholar_userid: U9fyow8AAAAJ # your Google Scholar ID
 orcid_id: 0000-0001-9721-781X # your ORCID ID
@@ -119,9 +119,9 @@ kramdown:
       start_line: 1
 
 # Includes & excludes
-include: 
+include:
   - _pages
-exclude: 
+exclude:
   - vendor
   - README.md
   - _pages/projects
