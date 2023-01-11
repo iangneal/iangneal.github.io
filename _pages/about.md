@@ -30,15 +30,15 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 **I am currently looking for jobs in both academic and industrial research, as I am on track to graduate in Summer 2023! Please contact me at <a href="mailto:{{ site.email | encode_email }}">{{site.email}}</a> if you are hiring in this cycle.**
 <i class="fas fa-exclamation-circle"></i>
 
-I am a PhD candidate studying Computer Science at the University of
-Michigan. I am advised by Professor [**Baris Kasikci**][baris-homepage].
+I am a PhD candidate studying Computer Science and Engineering at the University of
+Michigan.
+I am advised by Professor [**Baris Kasikci**][baris-homepage].
 
 In my research, I want to help developers write correct and efficient applications.
 To this end, I aim to design tools that allow developers to automatically reason
-about how their programs behave so that they can automatically find, reproduce, and repair bugs without
-having to understand how their code may be running on new, complex hardware (e.g.,
-how updates are ordered in concurrent and/or persistent memory systems). My
-current focus is on automatically reproducing incidents from production systems
+about how their programs behave so that they can automatically find, reproduce, and repair bugs, thereby
+helping developers spend less time fixing faults and more time innovating.
+My current focus is on automatically reproducing incidents from production systems
 and on the automated detection of semantic bugs.
 
 [baris-homepage]: https://web.eecs.umich.edu/~barisk/
