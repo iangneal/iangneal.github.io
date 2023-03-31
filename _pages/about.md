@@ -4,7 +4,7 @@ title: about
 permalink: /
 # description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 description: >
-  <i> PhD Candidate in Computer Science with a focus in building debugging tools. </i>
+  <i> PhD Candidate in Computer Science and Engineering with a focus in building debugging tools. </i>
 
 profile:
   align: left
