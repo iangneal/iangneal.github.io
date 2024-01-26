@@ -1,8 +1,8 @@
 Weisse:
     url: https://www.ofirweisse.com/
 
-Kasikci:
-    url: https://web.eecs.umich.edu/~barisk/
+# Kasikci:
+#     url: https://web.eecs.umich.edu/~barisk/
 
 Loughlin:
     url: https://www.kevinloughlin.org/
@@ -14,16 +14,16 @@ Kwon:
     url: https://sites.google.com/view/yjkwon/home
 
 Peter:
-    url: https://www.cs.utexas.edu/~simon/
+    url: https://homes.cs.washington.edu/~simpeter/
 
 Quinn:
-    url: https://web.eecs.umich.edu/~arquinn/
+    url: https://arquinn.github.io/
 
 Stoler:
     url: https://www.linkedin.com/in/benstoler/
 
-Reeves: 
-    url: https://www.linkedin.com/in/ben-reeves/
+# Reeves:
+#     url: https://www.linkedin.com/in/ben-reeves/
 
 Witchel:
     url: https://www.cs.utexas.edu/users/witchel/

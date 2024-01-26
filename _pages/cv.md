@@ -5,7 +5,7 @@ permalink: /cv
 nav: true
 ---
 
-_CV last updated on March 31st, 2023._
+_CV last updated on January 26th, 2024._
 
 _More details and references available upon request._
 

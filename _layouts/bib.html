@@ -2,7 +2,7 @@
 ---
 
 <div class="row">
-  {% unless entry.type == "patent" or entry.type == "thesis" %}
+  {% unless entry.type == "patent" or entry.type == "thesis" or entry.type == "dissertation" %}
   <div class="col-sm-2 abbr">
   {% if entry.abbr %}
     {% if site.data.venues[entry.abbr] %}

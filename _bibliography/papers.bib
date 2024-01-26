@@ -41,7 +41,7 @@ notes: https://github.com/inukshuk/jekyll-scholar
   pages={572--586},
   year={2019},
   month={oct},
-  
+
   selected={false},
   type={peer-reviewed},
   abbr={MICRO'19},
@@ -125,23 +125,23 @@ notes: https://github.com/inukshuk/jekyll-scholar
   pdf={fast21-neal.pdf},
   slides={https://www.usenix.org/sites/default/files/conference/protected-files/fast21_slides_neal.pdf},
   talk={https://youtu.be/YDnW-wXd6bc},
-  abstract={Persistent main memory (PM) dramatically improves IO performance. 
-  We find that this results in file systems on PM spending as much as 70% of 
-  the IO path performing file mapping (mapping file offsets to physical 
-  locations on storage media) on real workloads. However, even PM-optimized 
-  file systems perform file mapping based on decades-old assumptions. 
+  abstract={Persistent main memory (PM) dramatically improves IO performance.
+  We find that this results in file systems on PM spending as much as 70% of
+  the IO path performing file mapping (mapping file offsets to physical
+  locations on storage media) on real workloads. However, even PM-optimized
+  file systems perform file mapping based on decades-old assumptions.
   It is now critical to revisit file mapping for PM.
 
-  We explore the design space for PM file mapping by building and evaluating 
-  several file-mapping designs, including different data structure, caching, 
-  as well as meta-data and block allocation approaches, within the context of 
-  a PM-optimized file system. Based on our findings, we design HashFS, a 
-  hash-based file mapping approach. HashFS uses a single hash operation for 
-  all mapping and allocation operations, bypassing the file system cache, 
-  instead prefetching mappings via SIMD parallelism and caching translations 
-  explicitly. HashFS's resulting low latency provides superior performance 
-  compared to alternatives. HashFS increases the throughput of YCSB on 
-  LevelDB by up to 45% over page-cached extent trees in the state-of-the-art 
+  We explore the design space for PM file mapping by building and evaluating
+  several file-mapping designs, including different data structure, caching,
+  as well as meta-data and block allocation approaches, within the context of
+  a PM-optimized file system. Based on our findings, we design HashFS, a
+  hash-based file mapping approach. HashFS uses a single hash operation for
+  all mapping and allocation operations, bypassing the file system cache,
+  instead prefetching mappings via SIMD parallelism and caching translations
+  explicitly. HashFS's resulting low latency provides superior performance
+  compared to alternatives. HashFS increases the throughput of YCSB on
+  LevelDB by up to 45% over page-cached extent trees in the state-of-the-art
   Strata PM-optimized file system.}
 }
 
@@ -159,22 +159,22 @@ notes: https://github.com/inukshuk/jekyll-scholar
   short_talk={https://youtu.be/M1X_eYDzyYk},
   talk={https://www.youtube.com/watch?v=hCeq95rALKI},
   slides={http://nvmw.ucsd.edu/nvmw2021-program/nvmw2021-data/nvmw2021-paper38-presentation_slides.pptx},
-  abstract={Persistent Memory (PM) aims to revolutionize the storage-memory 
-  hierarchy, but programming these systems is error-prone. 
-  Our work investigates how to to help developers write better, 
-  bug-free PM applications by automatically debugging them. 
-  We first perform a study of bugs in persistent memory applications to 
-  identify the opportunities and pain-points of debugging these systems. 
-  Then, we discuss our work on AGAMOTTO, a generic and extensible system 
-  for automatically detecting PM bugs. Unlike existing tools that rely on 
-  extensive test cases or annotations, AGAMOTTO automatically detects bugs in 
-  PM systems by extending symbolic execution to model persistent memory. 
-  AGAMOTTO has so far identified 84 new bugs in 5 different PM applications and 
-  frameworks while incurring no false positives. We then discuss HIPPOCRATES, 
-  a system that automatically fixes bugs in PM systems. 
+  abstract={Persistent Memory (PM) aims to revolutionize the storage-memory
+  hierarchy, but programming these systems is error-prone.
+  Our work investigates how to to help developers write better,
+  bug-free PM applications by automatically debugging them.
+  We first perform a study of bugs in persistent memory applications to
+  identify the opportunities and pain-points of debugging these systems.
+  Then, we discuss our work on AGAMOTTO, a generic and extensible system
+  for automatically detecting PM bugs. Unlike existing tools that rely on
+  extensive test cases or annotations, AGAMOTTO automatically detects bugs in
+  PM systems by extending symbolic execution to model persistent memory.
+  AGAMOTTO has so far identified 84 new bugs in 5 different PM applications and
+  frameworks while incurring no false positives. We then discuss HIPPOCRATES,
+  a system that automatically fixes bugs in PM systems.
   HIPPOCRATES “does no harm”: its fixes are guaranteed to fix an PM bug without
-  introducing new bugs. 
-  We show that HIPPOCRATES produces fixes that are functionally equivalent to 
+  introducing new bugs.
+  We show that HIPPOCRATES produces fixes that are functionally equivalent to
   developer fixes and that HIPPOCRATES fixes have performance that rivals m
   anually-developed code.},
 
@@ -204,18 +204,18 @@ notes: https://github.com/inukshuk/jekyll-scholar
   tools, fixing durability bugs can be challenging. To determine the
   reason behind this difficulty, we first study durability bugs and
   find that although the solution to a durability bug seems simple,
-  the actual reasoning behind the fix can be complicated and timeconsuming. 
+  the actual reasoning behind the fix can be complicated and timeconsuming.
   Overall, the severity of these bugs coupled with the
   difficultly of developing fixes for them motivates us to consider
   automated approaches to fixing durability bugs.
   We introduce Hippocrates, a system that automatically fixes
-  durability bugs in PM systems. Hippocrates automatically performs the complex 
+  durability bugs in PM systems. Hippocrates automatically performs the complex
   reasoning behind durability bug fixes, relieving
   developers of time-consuming bug fixes. Hippocrates's fixes are
   guaranteed to be safe, as they are guaranteed to not introduce new
   bugs (``do no harm''). We use Hippocrates to automatically fix 23
   durability bugs in real-world and research systems. We show that
-  Hippocrates produces fixes that are functionally equivalent to developer fixes. 
+  Hippocrates produces fixes that are functionally equivalent to developer fixes.
   We then show that solely using Hippocrates’s fixes,
   we can create a PM port of Redis which has performance rivaling
   and exceeding the performance of a manually-developed PM-port
@@ -235,8 +235,8 @@ notes: https://github.com/inukshuk/jekyll-scholar
     url={https://www.usenix.org/conference/osdi21/presentation/khan},
     pdf={dmon.pdf},
     abbr={OSDI'21},
-    abstract={Poor data locality hurts an application’s performance. While 
-    compiler-based techniques have been proposed to improve data locality, 
+    abstract={Poor data locality hurts an application’s performance. While
+    compiler-based techniques have been proposed to improve data locality,
     they depend on heuristics, which can sometimes hurt performance. Therefore,
     developers typically find data locality issues via dynamic profiling and repair them manually. Alas, existing profiling techniques incur high overhead and cannot be deployed in production, where programs may exhibit previously-unseen performance problems.
 
@@ -258,21 +258,21 @@ notes: https://github.com/inukshuk/jekyll-scholar
   type={peer-reviewed},
   url={https://www.usenix.org/conference/usenixsecurity21/presentation/loughlin},
   abbr={USENIX Sec'21},
-  abstract={Modern processors allow attackers to leak data during transient 
-  (i.e., mis-speculated) execution through microarchitectural covert timing 
-  channels. While initial defenses were channel-specific, recent solutions 
-  employ speculative information flow control in an attempt to automatically 
-  mitigate attacks via any channel. However, we demonstrate that the current 
-  state-of-the-art defense fails to mitigate attacks using speculative stores, 
-  still allowing arbitrary data leakage during transient execution. Furthermore, 
-  we show that the state of the art does not scale to protect data in registers, 
+  abstract={Modern processors allow attackers to leak data during transient
+  (i.e., mis-speculated) execution through microarchitectural covert timing
+  channels. While initial defenses were channel-specific, recent solutions
+  employ speculative information flow control in an attempt to automatically
+  mitigate attacks via any channel. However, we demonstrate that the current
+  state-of-the-art defense fails to mitigate attacks using speculative stores,
+  still allowing arbitrary data leakage during transient execution. Furthermore,
+  we show that the state of the art does not scale to protect data in registers,
   incurring 30.8–63.4% overhead on SPEC 2017, depending on the threat model.
 
-  We then present DOLMA, the first defense to automatically provide 
-  comprehensive protection against all known transient execution attacks. 
-  DOLMA combines a lightweight speculative information flow control scheme with 
-  a set of secure performance optimizations. By enforcing a novel principle of 
-  transient non-observability, DOLMA ensures that a time slice on a core 
+  We then present DOLMA, the first defense to automatically provide
+  comprehensive protection against all known transient execution attacks.
+  DOLMA combines a lightweight speculative information flow control scheme with
+  a set of secure performance optimizations. By enforcing a novel principle of
+  transient non-observability, DOLMA ensures that a time slice on a core
   provides a unit of isolation in the context of existing attacks. Accordingly,
   DOLMA can allow speculative TLB/L1 cache accesses and variable-time arithmetic
   without loss of security. On SPEC 2017, DOLMA achieves comprehensive
@@ -298,3 +298,23 @@ notes: https://github.com/inukshuk/jekyll-scholar
     slides={https://www.usenix.org/system/files/preview_session_slides_neal.pdf},
 }
 
+@inproceedings{neal2023dissertation,
+    title={Automating the Detection and Correction of Failures in Modern Persistent Memory Systems},
+    author={Ian Neal},
+    year = {2023},
+    publisher = {University of Michigan, Horace H. Rackham School of Graduate Studies},
+    month = jul,
+
+    selected={false},
+    type={dissertation},
+
+    url={https://dx.doi.org/10.7302/8253},
+    pdf={dissertation.pdf},
+    abstract={
+        Modern software systems are deeply embedded into our daily lives; the failures of these systems can therefore result in massive real-world harm.
+        Consequently, considerable resources are spent finding and fixing bugs in testing.
+        Overall, the software industry spends billions of dollars each year on fixing bugs, and ultimately loses trillions of dollars each year due to poor software quality (as a result of bugs that escape testing and wreak havoc once deployed).
+        One particularly challenging domain of software development for developers is the area of Persistent Memory (PM) programming, an abstraction where developers write software that accesses and updates long-term storage with direct memory operations.
+        The PM programming abstraction has become popular in recent years due to new hardware advances in low-latency, byte-addressable storage devices. Unfortunately, writing crash-consistent PM applications is challenging, as untimely program crashes can result in data corruption and loss if the application does not carefully order updates to PM, and testing all possible crashes for data consistency is intractable. Furthermore, crash-consistency bugs are difficult to manually debug and repair, taking weeks or months for a developer to correctly fix. Without advancements in PM testing and program repair tools, developers will be unable to effectively write correct and efficient applications for modern PM platforms, hampering the ease of their adoption. Motivated by these PM software development challenges, this dissertation explores research in developing software techniques that automate difficult and time-consuming PM development tasks. We study PM system design, bugs, and bugs fixes and observe that we can automatically provide scalable and high-coverage bug detection and correction by approximating the reasoning performed by developers as they develop their applications. Based on this insight, we first explore automated bug detection and correction for PM application bugs caused by the misuse of platform-specific PM primitives. We develop a testing technique that prioritizes testing program paths that heavily modify PM, as these paths are more likely to misuse PM. We implement this technique in AGAMOTTO, a symbolic-execution tool that thoroughly explores PM applications to uncover platform-specific bugs, which we use to find 84 new bugs while incurring no false positives. We then develop a technique for generating fixes for PM platform-specific bugs that are provably correct, coupled with heuristic performance optimizations that do not compromise correctness, and implement the technique in a compiler tool, HIPPOCRATES. Second, this dissertation explores automated bug detection for general crash-consistency bugs in PM applications (i.e., bugs caused by the improper ordering of PM updates). We develop a technique that automatically identifies groups of PM program behaviors that are likely to result in the same crash-consistency bugs and only tests one behavior out of the group, thus providing high testing accuracy (by testing all types of behaviors thoroughly) while also increasing efficiency (by eliminating redundant testing on functionally-similar behaviors). We implement this technique in SQUINT, a model-checking tool that selectively tests groups of PM program behaviors identified from a dynamic program trace, which we use to find 108 PM crash-consistency bugs. The works presented in this dissertation provide a holistic automated testing and program repair solution for PM software developers. In sum, these tools have been used to find and fix over two hundred PM bugs in real-world PM systems, demonstrating both the need for such tools and the efficacy of the tools presented in this dissertation.
+    },
+}
